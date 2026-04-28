@@ -1,0 +1,31 @@
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+import { createRouter, createWebHistory } from 'vue-router'
+import { createI18n } from 'vue-i18n'
+import App from './App.vue'
+import zhCN from './i18n/locales/zh.json'
+import enUS from './i18n/locales/en.json'
+import './styles/main.css'
+
+const routes = [
+  { path: '/', redirect: '/login' },
+  { path: '/login', name: 'Login', component: () => import('./pages/Login.vue') },
+  { path: '/dashboard', name: 'Dashboard', component: () => import('./pages/Dashboard.vue'), meta: { requiresAuth: true } },
+  { path: '/tools', name: 'Tools', component: () => import('./pages/Tools.vue'), meta: { requiresAuth: true } },
+  { path: '/upload', name: 'Upload', component: () => import('./pages/Upload.vue'), meta: { requiresAuth: true } },
+]
+
+const router = createRouter({ history: createWebHistory(), routes })
+const i18n = createI18n({ legacy: false, locale: 'zh', fallbackLocale: 'en', messages: { zh: zhCN, en: enUS } })
+
+router.beforeEach((to, _from, next) => {
+  const token = localStorage.getItem('token')
+  if (to.meta.requiresAuth && !token) next('/login')
+  else next()
+})
+
+const app = createApp(App)
+app.use(createPinia())
+app.use(router)
+app.use(i18n)
+app.mount('#app')

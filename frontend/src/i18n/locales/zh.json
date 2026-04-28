@@ -1,0 +1,7 @@
+{
+  "nav": { "dashboard": "首页", "tools": "工具集", "upload": "上传", "logout": "退出" },
+  "login": { "title": "登录", "username": "用户名", "password": "密码", "submit": "登录" },
+  "dashboard": { "title": "欢迎回来", "tools": "工具集", "recent": "最近使用", "quickUpload": "快速上传" },
+  "tools": { "title": "工具集", "search": "搜索工具...", "all": "全部", "featured": "精选" },
+  "upload": { "title": "文件上传", "drop": "拖拽文件到这里", "browse": "选择文件", "list": "已上传文件", "size": "大小", "expires": "过期时间", "delete": "删除" }
+}

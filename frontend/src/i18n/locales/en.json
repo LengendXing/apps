@@ -1,0 +1,7 @@
+{
+  "nav": { "dashboard": "Home", "tools": "Tools", "upload": "Upload", "logout": "Logout" },
+  "login": { "title": "Login", "username": "Username", "password": "Password", "submit": "Login" },
+  "dashboard": { "title": "Welcome back", "tools": "Tools", "recent": "Recent", "quickUpload": "Quick Upload" },
+  "tools": { "title": "Tools", "search": "Search tools...", "all": "All", "featured": "Featured" },
+  "upload": { "title": "File Upload", "drop": "Drop files here", "browse": "Browse", "list": "Uploaded Files", "size": "Size", "expires": "Expires", "delete": "Delete" }
+}
