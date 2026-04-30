@@ -16,7 +16,7 @@ request.interceptors.response.use(
   (err) => {
     if (err.response?.data?.code === 1001 || err.response?.status === 401) {
       localStorage.removeItem('token')
-      window.location.href = '/login'
+      window.location.href = '/admin/login'
     }
     return Promise.reject(err)
   }
@@ -45,6 +45,11 @@ export const uploads = {
   },
   list: () => request.get('/uploads'),
   delete: (id: number) => request.delete(`/uploads/${id}`),
+}
+
+export const settings = {
+  verifyAccessPassword: (d: { password: string }) => request.post('/settings/access-password/verify', d),
+  updateAccessPassword: (d: { password: string }) => request.put('/settings/access-password', d),
 }
 
 export default request

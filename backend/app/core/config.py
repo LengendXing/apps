@@ -4,7 +4,7 @@ from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     ENVIRONMENT: str = "development"
-    DATABASE_URL: str = "sqlite+aiosqlite:///./data/ap_app.db"
+    DATABASE_URL: str = "sqlite+aiosqlite:////home/myprojects/apps/data/ap_app.db"
 
     JWT_SECRET_KEY: str = "change-me"
     JWT_ALGORITHM: str = "HS256"

@@ -13,7 +13,7 @@ from app.core.database import init_db
 settings = get_settings()
 setup_logging(settings.ENVIRONMENT)
 
-from app.api import auth, tools, uploads
+from app.api import auth, tools, uploads, settings as settings_api
 
 app = FastAPI(title="Apps Startpage", version="0.1.0")
 
@@ -28,6 +28,7 @@ app.add_middleware(
 app.include_router(auth.router, prefix="/api/auth", tags=["auth"])
 app.include_router(tools.router, prefix="/api", tags=["tools"])
 app.include_router(uploads.router, prefix="/api/uploads", tags=["uploads"])
+app.include_router(settings_api.router, prefix="/api", tags=["settings"])
 
 # Serve uploaded files
 upload_path = Path(settings.UPLOAD_DIR)

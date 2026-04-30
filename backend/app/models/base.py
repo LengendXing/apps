@@ -1,5 +1,5 @@
-from sqlalchemy.orm import DeclarativeBase
-from sqlalchemy import func
+from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
+from sqlalchemy import String, func
 
 
 class Base(DeclarativeBase):
@@ -7,5 +7,5 @@ class Base(DeclarativeBase):
 
 
 class TimestampMixin:
-    created_at = func.now()
-    updated_at = func.now()
+    created_at: Mapped[str] = mapped_column(String(64), server_default=func.now())
+    updated_at: Mapped[str] = mapped_column(String(64), server_default=func.now())

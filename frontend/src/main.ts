@@ -8,11 +8,11 @@ import enUS from './i18n/locales/en.json'
 import './styles/main.css'
 
 const routes = [
-  { path: '/', redirect: '/login' },
-  { path: '/login', name: 'Login', component: () => import('./pages/Login.vue') },
-  { path: '/dashboard', name: 'Dashboard', component: () => import('./pages/Dashboard.vue'), meta: { requiresAuth: true } },
-  { path: '/tools', name: 'Tools', component: () => import('./pages/Tools.vue'), meta: { requiresAuth: true } },
-  { path: '/upload', name: 'Upload', component: () => import('./pages/Upload.vue'), meta: { requiresAuth: true } },
+  { path: '/', name: 'Home', component: () => import('./pages/Home.vue') },
+  { path: '/admin/login', name: 'Login', component: () => import('./pages/Login.vue') },
+  { path: '/admin', name: 'Admin', component: () => import('./pages/Admin.vue'), meta: { requiresAuth: true } },
+  { path: '/admin/tools', name: 'AdminTools', component: () => import('./pages/AdminTools.vue'), meta: { requiresAuth: true } },
+  { path: '/admin/uploads', name: 'AdminUploads', component: () => import('./pages/AdminUploads.vue'), meta: { requiresAuth: true } },
 ]
 
 const router = createRouter({ history: createWebHistory(), routes })
@@ -20,7 +20,7 @@ const i18n = createI18n({ legacy: false, locale: 'zh', fallbackLocale: 'en', mes
 
 router.beforeEach((to, _from, next) => {
   const token = localStorage.getItem('token')
-  if (to.meta.requiresAuth && !token) next('/login')
+  if (to.meta.requiresAuth && !token) next('/admin/login')
   else next()
 })
 

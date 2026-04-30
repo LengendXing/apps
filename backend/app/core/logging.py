@@ -3,7 +3,11 @@ import logging
 import sys
 
 
-def setup_logging(level: str = "INFO"):
+ENV_LEVEL_MAP = {"development": "DEBUG", "staging": "INFO", "production": "WARNING"}
+
+
+def setup_logging(env: str = "development"):
+    level = ENV_LEVEL_MAP.get(env, "INFO")
     logging.basicConfig(
         format="%(message)s",
         stream=sys.stdout,

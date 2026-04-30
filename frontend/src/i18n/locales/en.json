@@ -1,7 +1,9 @@
 {
   "nav": { "dashboard": "Home", "tools": "Tools", "upload": "Upload", "logout": "Logout" },
   "login": { "title": "Login", "username": "Username", "password": "Password", "submit": "Login" },
-  "dashboard": { "title": "Welcome back", "tools": "Tools", "recent": "Recent", "quickUpload": "Quick Upload" },
+  "dashboard": { "title": "Welcome back", "tools": "Tools", "toolsDesc": "Manage your development tools and resources", "recent": "Recent", "quickUpload": "Quick Upload", "uploadDesc": "Upload and share temporary files", "settings": "Settings", "settingsDesc": "Change access password and other config", "accessPassword": "C-end Access Password", "accessPasswordPlaceholder": "Enter new password", "update": "Update", "passwordUpdated": "Password updated", "updateFailed": "Update failed" },
   "tools": { "title": "Tools", "search": "Search tools...", "all": "All", "featured": "Featured" },
-  "upload": { "title": "File Upload", "drop": "Drop files here", "browse": "Browse", "list": "Uploaded Files", "size": "Size", "expires": "Expires", "delete": "Delete" }
+  "upload": { "title": "File Upload", "drop": "Drop files here", "browse": "Browse", "list": "Uploaded Files", "size": "Size", "expires": "Expires", "delete": "Delete", "uploading": "Uploading...", "file": "File", "action": "Action", "failed": "Upload failed" },
+  "home": { "welcome": "Welcome to Apps", "hint": "Please enter access password to continue", "password": "Access Password", "submit": "Enter", "wrongPassword": "Wrong password, please retry", "tools": "Tools", "search": "Search tools...", "empty": "No tools yet, contact admin" },
+  "adminTools": { "title": "Tool Management", "addCategory": "Add Category", "addTool": "Add Tool", "categoryForm": "New Category", "categoryName": "Category Name", "toolForm": "New Tool", "toolName": "Tool Name", "toolUrl": "Tool URL", "noCategory": "No Category", "save": "Save", "cancel": "Cancel", "description": "Description", "featured": "Featured", "delete": "Delete", "empty": "No tools yet, add categories and tools first", "icon": "Icon" }
 }
