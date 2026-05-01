@@ -1,9 +1,48 @@
 {
-  "nav": { "dashboard": "首页", "tools": "工具集", "upload": "上传", "logout": "退出" },
+  "nav": { "dashboard": "首页", "tools": "工具集", "upload": "上传", "users": "用户", "audit": "日志", "logout": "退出" },
   "login": { "title": "登录", "username": "用户名", "password": "密码", "submit": "登录" },
-  "dashboard": { "title": "欢迎回来", "tools": "工具集", "toolsDesc": "管理您的开发工具和资源", "recent": "最近使用", "quickUpload": "快速上传", "uploadDesc": "上传和分享临时文件", "settings": "系统设置", "settingsDesc": "修改C端访问密码等配置", "accessPassword": "C端访问密码", "accessPasswordPlaceholder": "输入新密码", "update": "更新", "passwordUpdated": "密码已更新", "updateFailed": "更新失败" },
+  "dashboard": {
+    "title": "欢迎回来",
+    "tools": "工具集", "toolsDesc": "管理您的开发工具和资源",
+    "quickUpload": "快速上传", "uploadDesc": "上传和分享临时文件",
+    "settings": "系统设置", "settingsDesc": "修改C端访问密码等配置",
+    "accessPassword": "C端访问密码", "accessPasswordPlaceholder": "输入新密码",
+    "update": "更新", "passwordUpdated": "密码已更新", "updateFailed": "更新失败",
+    "users": "用户管理", "usersDesc": "管理系统用户和权限",
+    "audit": "审计日志", "auditDesc": "查看系统操作记录",
+    "statUsers": "用户", "statCategories": "分类", "statTools": "工具", "statFiles": "文件"
+  },
   "tools": { "title": "工具集", "search": "搜索工具...", "all": "全部", "featured": "精选" },
   "upload": { "title": "文件上传", "drop": "拖拽文件到这里", "browse": "选择文件", "list": "已上传文件", "size": "大小", "expires": "过期时间", "delete": "删除", "uploading": "上传中...", "file": "文件", "action": "操作", "failed": "上传失败" },
-  "home": { "welcome": "欢迎使用 Apps", "hint": "请输入访问密码以继续", "password": "访问密码", "submit": "进入", "wrongPassword": "密码错误，请重试", "tools": "常用工具", "search": "搜索工具...", "empty": "暂无工具，请联系管理员添加" },
-  "adminTools": { "title": "工具管理", "addCategory": "新增分类", "addTool": "新增工具", "categoryForm": "新增分类", "categoryName": "分类名称", "toolForm": "新增工具", "toolName": "工具名称", "toolUrl": "工具链接", "noCategory": "未分类", "save": "保存", "cancel": "取消", "description": "描述", "featured": "精选", "delete": "删除", "empty": "暂无��具，请先添加分类和工具", "icon": "图标" }
+  "home": { "welcome": "欢迎使用 Apps", "hint": "请输入访问密码以继续", "password": "访问密码", "submit": "进入", "wrongPassword": "密码错误，请重试", "tools": "常用工具", "search": "搜索工具...", "empty": "暂无工具，请联系管理员添加", "all": "全部" },
+  "adminTools": {
+    "title": "工具管理",
+    "addCategory": "新增分类", "addTool": "新增工具",
+    "categoryForm": "分类信息", "categoryName": "分类名称",
+    "toolForm": "工具信息", "toolName": "工具名称", "toolUrl": "工具链接",
+    "noCategory": "未分类", "save": "保存", "cancel": "取消",
+    "description": "描述", "featured": "精选", "delete": "删除",
+    "empty": "暂无工具，请先添加分类和工具", "icon": "图标",
+    "edit": "编辑", "editCategory": "编辑分类", "editTool": "编辑工具",
+    "sortOrder": "排序", "tags": "标签", "platforms": "平台",
+    "confirmDelete": "确认删除？"
+  },
+  "adminUsers": {
+    "title": "用户管理",
+    "username": "用户名", "email": "邮箱", "role": "角色",
+    "isActive": "状态", "action": "操作",
+    "disable": "禁用", "enable": "启用", "deleteUser": "删除",
+    "active": "正常", "inactive": "已禁用",
+    "admin": "管理员", "user": "普通用户",
+    "confirmDelete": "确认删除该用户？",
+    "selfDeleteWarn": "不能删除自己"
+  },
+  "adminAudit": {
+    "title": "审计日志",
+    "action": "操作", "targetType": "目标类型",
+    "targetId": "目标ID", "details": "详情",
+    "time": "时间", "userId": "用户ID",
+    "filterAction": "筛选操作", "filterType": "筛选类型",
+    "all": "全部"
+  }
 }

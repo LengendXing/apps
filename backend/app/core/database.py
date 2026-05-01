@@ -38,5 +38,5 @@ async def init_db():
             await session.commit()
         existing_user = await session.execute(select(User).where(User.username == "admin"))
         if not existing_user.scalar_one_or_none():
-            session.add(User(username="admin", email="admin@apps.local", password_hash=hash_password(default_admin_password), is_active=True))
+            session.add(User(username="admin", email="admin@apps.local", password_hash=hash_password(default_admin_password), is_active=True, role="admin"))
             await session.commit()

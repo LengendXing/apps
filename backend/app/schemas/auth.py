@@ -1,4 +1,5 @@
 from pydantic import BaseModel, EmailStr, Field
+from typing import Optional
 
 
 class UserCreate(BaseModel):
@@ -12,14 +13,17 @@ class UserOut(BaseModel):
     username: str
     email: str
     is_active: bool
+    role: str = "user"
 
     model_config = {"from_attributes": True}
+
+
+class UserUpdate(BaseModel):
+    email: Optional[EmailStr] = None
+    is_active: Optional[bool] = None
+    role: Optional[str] = Field(None, pattern="^(admin|user)$")
 
 
 class LoginRequest(BaseModel):
     username: str
     password: str
-
-
-class VerifyRequest(BaseModel):
-    code: str = Field(min_length=4, max_length=12)

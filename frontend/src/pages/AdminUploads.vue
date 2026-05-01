@@ -6,11 +6,11 @@
         @dragover.prevent
         @drop.prevent="handleDrop"
         class="border-2 border-dashed border-border rounded-xl p-12 text-center hover:bg-muted/30 transition-colors cursor-pointer"
-        @click="$refs.fileInput?.click()"
+        @click="($refs.fileInput as HTMLInputElement)?.click()"
       >
         <p class="text-muted-foreground">{{ t('upload.drop') }}</p>
         <p class="text-sm text-muted-foreground mt-2">({{ t('upload.browse') }})</p>
-        <input ref="fileInput" type="file" class="hidden" @change="handleFileSelect" />
+        <input ref="fileInput" type="file" class="hidden" @change="handleFileSelect" multiple />
       </div>
       <div v-if="uploading" class="mt-4 text-sm text-muted-foreground">{{ t('upload.uploading') }}</div>
       <div v-if="error" class="mt-4 p-3 bg-red-50 border border-red-200 rounded-md text-red-600 text-sm">{{ error }}</div>
@@ -55,12 +55,12 @@ const fileInput = ref<HTMLInputElement>()
 
 const handleDrop = (e: DragEvent) => {
   const fileList = e.dataTransfer?.files
-  if (fileList?.[0]) uploadFiles([fileList[0]])
+  if (fileList?.length) uploadFiles(Array.from(fileList))
 }
 
 const handleFileSelect = (e: Event) => {
   const input = e.target as HTMLInputElement
-  if (input.files?.[0]) uploadFiles([input.files[0]])
+  if (input.files?.length) uploadFiles(Array.from(input.files))
 }
 
 const uploadFiles = async (fileList: File[]) => {
@@ -81,7 +81,7 @@ const uploadFiles = async (fileList: File[]) => {
 const loadFiles = async () => {
   try {
     const res = await uploads.list()
-    files.value = res.data
+    files.value = res.data.items || res.data || []
   } catch (_) {}
 }
 

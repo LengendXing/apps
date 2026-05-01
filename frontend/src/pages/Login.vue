@@ -37,7 +37,7 @@ const handleLogin = async () => {
     const res = await auth.login(form.value)
     authStore.setToken(res.data.token)
     authStore.setUser(res.data.user)
-    router.push('/dashboard')
+    router.push('/admin')
   } catch (e: any) {
     error.value = e.response?.data?.detail || 'Login failed'
   }

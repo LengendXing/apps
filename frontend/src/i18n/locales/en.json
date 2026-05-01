@@ -1,9 +1,48 @@
 {
-  "nav": { "dashboard": "Home", "tools": "Tools", "upload": "Upload", "logout": "Logout" },
+  "nav": { "dashboard": "Home", "tools": "Tools", "upload": "Upload", "users": "Users", "audit": "Audit", "logout": "Logout" },
   "login": { "title": "Login", "username": "Username", "password": "Password", "submit": "Login" },
-  "dashboard": { "title": "Welcome back", "tools": "Tools", "toolsDesc": "Manage your development tools and resources", "recent": "Recent", "quickUpload": "Quick Upload", "uploadDesc": "Upload and share temporary files", "settings": "Settings", "settingsDesc": "Change access password and other config", "accessPassword": "C-end Access Password", "accessPasswordPlaceholder": "Enter new password", "update": "Update", "passwordUpdated": "Password updated", "updateFailed": "Update failed" },
+  "dashboard": {
+    "title": "Welcome back",
+    "tools": "Tools", "toolsDesc": "Manage your development tools and resources",
+    "quickUpload": "Quick Upload", "uploadDesc": "Upload and share temporary files",
+    "settings": "Settings", "settingsDesc": "Change access password and other config",
+    "accessPassword": "C-end Access Password", "accessPasswordPlaceholder": "Enter new password",
+    "update": "Update", "passwordUpdated": "Password updated", "updateFailed": "Update failed",
+    "users": "User Management", "usersDesc": "Manage system users and permissions",
+    "audit": "Audit Logs", "auditDesc": "View system operation records",
+    "statUsers": "Users", "statCategories": "Categories", "statTools": "Tools", "statFiles": "Files"
+  },
   "tools": { "title": "Tools", "search": "Search tools...", "all": "All", "featured": "Featured" },
   "upload": { "title": "File Upload", "drop": "Drop files here", "browse": "Browse", "list": "Uploaded Files", "size": "Size", "expires": "Expires", "delete": "Delete", "uploading": "Uploading...", "file": "File", "action": "Action", "failed": "Upload failed" },
-  "home": { "welcome": "Welcome to Apps", "hint": "Please enter access password to continue", "password": "Access Password", "submit": "Enter", "wrongPassword": "Wrong password, please retry", "tools": "Tools", "search": "Search tools...", "empty": "No tools yet, contact admin" },
-  "adminTools": { "title": "Tool Management", "addCategory": "Add Category", "addTool": "Add Tool", "categoryForm": "New Category", "categoryName": "Category Name", "toolForm": "New Tool", "toolName": "Tool Name", "toolUrl": "Tool URL", "noCategory": "No Category", "save": "Save", "cancel": "Cancel", "description": "Description", "featured": "Featured", "delete": "Delete", "empty": "No tools yet, add categories and tools first", "icon": "Icon" }
+  "home": { "welcome": "Welcome to Apps", "hint": "Please enter access password to continue", "password": "Access Password", "submit": "Enter", "wrongPassword": "Wrong password, please retry", "tools": "Tools", "search": "Search tools...", "empty": "No tools yet, contact admin", "all": "All" },
+  "adminTools": {
+    "title": "Tool Management",
+    "addCategory": "Add Category", "addTool": "Add Tool",
+    "categoryForm": "Category Info", "categoryName": "Category Name",
+    "toolForm": "Tool Info", "toolName": "Tool Name", "toolUrl": "Tool URL",
+    "noCategory": "No Category", "save": "Save", "cancel": "Cancel",
+    "description": "Description", "featured": "Featured", "delete": "Delete",
+    "empty": "No tools yet, add categories and tools first", "icon": "Icon",
+    "edit": "Edit", "editCategory": "Edit Category", "editTool": "Edit Tool",
+    "sortOrder": "Sort Order", "tags": "Tags", "platforms": "Platforms",
+    "confirmDelete": "Confirm delete?"
+  },
+  "adminUsers": {
+    "title": "User Management",
+    "username": "Username", "email": "Email", "role": "Role",
+    "isActive": "Status", "action": "Action",
+    "disable": "Disable", "enable": "Enable", "deleteUser": "Delete",
+    "active": "Active", "inactive": "Disabled",
+    "admin": "Admin", "user": "User",
+    "confirmDelete": "Confirm delete this user?",
+    "selfDeleteWarn": "Cannot delete yourself"
+  },
+  "adminAudit": {
+    "title": "Audit Logs",
+    "action": "Action", "targetType": "Target Type",
+    "targetId": "Target ID", "details": "Details",
+    "time": "Time", "userId": "User ID",
+    "filterAction": "Filter Action", "filterType": "Filter Type",
+    "all": "All"
+  }
 }

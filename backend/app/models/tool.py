@@ -16,4 +16,4 @@ class Tool(Base, TimestampMixin):
     tags: Mapped[str] = mapped_column(Text, default="[]")
     platforms: Mapped[str] = mapped_column(Text, default="[]")
     sort_order: Mapped[int] = mapped_column(Integer, default=0)
-    is_featured: Mapped[bool] = mapped_column(default=False)
+    is_featured: Mapped[int] = mapped_column(Integer, default=0)

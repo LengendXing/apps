@@ -1,8 +1,12 @@
+import os
+import json
+from datetime import datetime, timezone
+
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.core.database import get_db
+from app.core.database import get_db, async_session
 from app.core.dependencies import get_admin_user
 from app.core.security import verify_password, hash_password
 from app.models.setting import Setting
@@ -33,7 +37,7 @@ async def verify_access_password(body: dict, db: AsyncSession = Depends(get_db))
 async def update_access_password(
     body: dict,
     db: AsyncSession = Depends(get_db),
-    user: User = Depends(get_admin_user),
+    _admin: User = Depends(get_admin_user),
 ):
     password = body.get("password", "").strip()
     if not password:
@@ -47,3 +51,10 @@ async def update_access_password(
         db.add(Setting(key="access_password", value=hashed, description="C端访问密码"))
     await db.commit()
     return Response.ok(data={"updated": True})
+
+
+@router.get("/settings/info")
+async def get_settings_info(db: AsyncSession = Depends(get_db), _admin: User = Depends(get_admin_user)):
+    result = await db.execute(select(Setting))
+    settings = result.scalars().all()
+    return Response.ok(data=[{"key": s.key, "description": s.description} for s in settings])
