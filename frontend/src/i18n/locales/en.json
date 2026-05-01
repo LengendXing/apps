@@ -1,20 +1,18 @@
 {
-  "nav": { "dashboard": "Home", "tools": "Tools", "upload": "Upload", "users": "Users", "audit": "Audit", "logout": "Logout" },
+  "nav": { "dashboard": "Home", "tools": "Tools", "users": "Users", "audit": "Audit", "logout": "Logout" },
   "login": { "title": "Login", "username": "Username", "password": "Password", "submit": "Login" },
   "dashboard": {
     "title": "Welcome back",
     "tools": "Tools", "toolsDesc": "Manage your development tools and resources",
-    "quickUpload": "Quick Upload", "uploadDesc": "Upload and share temporary files",
     "settings": "Settings", "settingsDesc": "Change access password and other config",
     "accessPassword": "C-end Access Password", "accessPasswordPlaceholder": "Enter new password",
     "update": "Update", "passwordUpdated": "Password updated", "updateFailed": "Update failed",
     "users": "User Management", "usersDesc": "Manage system users and permissions",
     "audit": "Audit Logs", "auditDesc": "View system operation records",
-    "statUsers": "Users", "statCategories": "Categories", "statTools": "Tools", "statFiles": "Files"
+    "statUsers": "Users", "statCategories": "Categories", "statTools": "Tools"
   },
   "tools": { "title": "Tools", "search": "Search tools...", "all": "All", "featured": "Featured" },
-  "upload": { "title": "File Upload", "drop": "Drop files here", "browse": "Browse", "list": "Uploaded Files", "size": "Size", "expires": "Expires", "delete": "Delete", "uploading": "Uploading...", "file": "File", "action": "Action", "failed": "Upload failed" },
-  "home": { "welcome": "Welcome to Apps", "hint": "Please enter access password to continue", "password": "Access Password", "submit": "Enter", "wrongPassword": "Wrong password, please retry", "tools": "Tools", "search": "Search tools...", "empty": "No tools yet, contact admin", "all": "All" },
+  "home": { "welcome": "Welcome to Apps", "hint": "Please enter access password to continue", "password": "Access Password", "submit": "Enter", "wrongPassword": "Wrong password, please retry", "tools": "Tools", "search": "Search tools...", "empty": "No tools yet, contact admin", "all": "All", "versions": "Versions" },
   "adminTools": {
     "title": "Tool Management",
     "addCategory": "Add Category", "addTool": "Add Tool",
@@ -25,7 +23,12 @@
     "empty": "No tools yet, add categories and tools first", "icon": "Icon",
     "edit": "Edit", "editCategory": "Edit Category", "editTool": "Edit Tool",
     "sortOrder": "Sort Order", "tags": "Tags", "platforms": "Platforms",
-    "confirmDelete": "Confirm delete?"
+    "confirmDelete": "Confirm delete?",
+    "iconType": "Icon Type", "iconEmoji": "Emoji", "iconUrl": "Image URL",
+    "iconUrlPlaceholder": "Enter icon image URL",
+    "versions": "Versions", "addVersion": "Add Version",
+    "versionNumber": "Version", "versionUrl": "Version URL",
+    "removeVersion": "Remove"
   },
   "adminUsers": {
     "title": "User Management",

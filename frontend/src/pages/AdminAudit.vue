@@ -9,13 +9,11 @@
           <option value="create">create</option>
           <option value="update">update</option>
           <option value="delete">delete</option>
-          <option value="upload">upload</option>
         </select>
         <select v-model="filterType" @change="page = 1; loadLogs()" class="px-3 py-1.5 text-sm rounded-md border border-border bg-background">
           <option value="">{{ t('adminAudit.filterType') }}: {{ t('adminAudit.all') }}</option>
           <option value="category">category</option>
           <option value="tool">tool</option>
-          <option value="file">file</option>
         </select>
       </div>
 

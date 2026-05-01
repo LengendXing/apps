@@ -82,11 +82,20 @@ async def delete_category(
 # --- Tools ---
 
 def _tool_to_dict(t: Tool) -> dict:
+    versions_raw = t.versions
+    if isinstance(versions_raw, str):
+        try:
+            versions_raw = json.loads(versions_raw)
+        except (json.JSONDecodeError, TypeError):
+            versions_raw = []
+    if not isinstance(versions_raw, list):
+        versions_raw = []
     return {
         "id": t.id, "name": t.name, "description": t.description, "url": t.url,
         "icon": t.icon, "category_id": t.category_id,
         "tags": json.loads(t.tags) if isinstance(t.tags, str) else t.tags or [],
         "platforms": json.loads(t.platforms) if isinstance(t.platforms, str) else t.platforms or [],
+        "versions": versions_raw,
         "sort_order": t.sort_order,
         "is_featured": bool(t.is_featured),
     }
@@ -130,6 +139,7 @@ async def create_tool(
         category_id=body.category_id,
         tags=json.dumps(body.tags, ensure_ascii=False),
         platforms=json.dumps(body.platforms, ensure_ascii=False),
+        versions=json.dumps([v.model_dump() for v in body.versions], ensure_ascii=False),
         sort_order=body.sort_order,
         is_featured=1 if body.is_featured else 0,
     )
@@ -153,6 +163,8 @@ async def update_tool(
         update_data["tags"] = json.dumps(update_data["tags"], ensure_ascii=False)
     if "platforms" in update_data and update_data["platforms"] is not None:
         update_data["platforms"] = json.dumps(update_data["platforms"], ensure_ascii=False)
+    if "versions" in update_data and update_data["versions"] is not None:
+        update_data["versions"] = json.dumps([v.model_dump() if hasattr(v, "model_dump") else v for v in update_data["versions"]], ensure_ascii=False)
     if "is_featured" in update_data and update_data["is_featured"] is not None:
         update_data["is_featured"] = 1 if update_data["is_featured"] else 0
     for key, value in update_data.items():

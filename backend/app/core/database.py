@@ -20,7 +20,6 @@ async def init_db():
         import app.models.user  # noqa: F401
         import app.models.category  # noqa: F401
         import app.models.tool  # noqa: F401
-        import app.models.file_upload  # noqa: F401
         import app.models.audit_log  # noqa: F401
         import app.models.setting  # noqa: F401
         await conn.run_sync(Base.metadata.create_all)

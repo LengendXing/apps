@@ -49,9 +49,27 @@
             <label class="text-xs text-muted-foreground block mb-1">{{ t('adminTools.toolUrl') }}</label>
             <input v-model="toolForm.url" :placeholder="t('adminTools.toolUrl')" class="w-full px-3 py-1.5 text-sm rounded-md border border-border bg-background" />
           </div>
+          <!-- Icon Type Selector -->
+          <div>
+            <label class="text-xs text-muted-foreground block mb-1">{{ t('adminTools.iconType') }}</label>
+            <div class="flex gap-2">
+              <label class="flex items-center gap-1 text-sm cursor-pointer">
+                <input type="radio" v-model="toolForm.iconType" value="emoji" /> {{ t('adminTools.iconEmoji') }}
+              </label>
+              <label class="flex items-center gap-1 text-sm cursor-pointer">
+                <input type="radio" v-model="toolForm.iconType" value="url" /> {{ t('adminTools.iconUrl') }}
+              </label>
+            </div>
+          </div>
           <div>
             <label class="text-xs text-muted-foreground block mb-1">{{ t('adminTools.icon') }}</label>
-            <input v-model="toolForm.icon" :placeholder="t('adminTools.icon')" class="w-full px-3 py-1.5 text-sm rounded-md border border-border bg-background" />
+            <div class="flex gap-2 items-center">
+              <input v-model="toolForm.icon" :placeholder="toolForm.iconType === 'url' ? t('adminTools.iconUrlPlaceholder') : '🐙'" class="flex-1 px-3 py-1.5 text-sm rounded-md border border-border bg-background" />
+              <div v-if="toolForm.icon" class="w-8 h-8 rounded bg-muted flex items-center justify-center text-lg flex-shrink-0 overflow-hidden">
+                <img v-if="toolForm.iconType === 'url'" :src="toolForm.icon" class="w-full h-full object-cover rounded" alt="" />
+                <span v-else>{{ toolForm.icon }}</span>
+              </div>
+            </div>
           </div>
           <div>
             <label class="text-xs text-muted-foreground block mb-1">{{ t('adminTools.description') }}</label>
@@ -64,6 +82,19 @@
           <div>
             <label class="text-xs text-muted-foreground block mb-1">{{ t('adminTools.platforms') }}</label>
             <input v-model="toolForm.platformsStr" placeholder="mac,windows" class="w-full px-3 py-1.5 text-sm rounded-md border border-border bg-background" />
+          </div>
+        </div>
+        <!-- Versions -->
+        <div class="mt-4">
+          <div class="flex items-center justify-between mb-2">
+            <label class="text-sm font-semibold">{{ t('adminTools.versions') }}</label>
+            <button @click="addVersion" class="px-2 py-0.5 text-xs bg-muted rounded hover:bg-primary hover:text-primary-foreground transition-colors">{{ t('adminTools.addVersion') }}</button>
+          </div>
+          <div v-for="(v, idx) in toolForm.versions" :key="idx" class="flex gap-2 items-center mb-2">
+            <span class="text-xs text-muted-foreground w-5 text-right">{{ idx + 1 }}</span>
+            <input v-model="v.version" :placeholder="t('adminTools.versionNumber')" class="w-32 px-2 py-1 text-sm rounded-md border border-border bg-background" />
+            <input v-model="v.url" :placeholder="t('adminTools.versionUrl')" class="flex-1 px-2 py-1 text-sm rounded-md border border-border bg-background" />
+            <button @click="toolForm.versions.splice(idx, 1)" class="text-red-400 hover:text-red-600 text-xs">{{ t('adminTools.removeVersion') }}</button>
           </div>
         </div>
         <div class="flex items-center gap-4 mt-3">
@@ -89,12 +120,14 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           <div v-for="tool in getTools(cat.id)" :key="tool.id"
                class="bg-card rounded-lg border border-border p-4 hover:bg-muted/50 transition-all flex items-center gap-3">
-            <div class="w-10 h-10 rounded-lg bg-muted flex items-center justify-center text-lg flex-shrink-0">
-              {{ tool.icon || '🔗' }}
+            <div class="w-10 h-10 rounded-lg bg-muted flex items-center justify-center text-lg flex-shrink-0 overflow-hidden">
+              <img v-if="isIconUrl(tool.icon)" :src="tool.icon" class="w-full h-full object-cover rounded-lg" alt="" />
+              <span v-else>{{ tool.icon || '🔗' }}</span>
             </div>
             <div class="min-w-0 flex-1">
               <p class="font-medium truncate">{{ tool.name }}</p>
               <p class="text-xs text-muted-foreground truncate">{{ tool.description }}</p>
+              <p v-if="tool.versions?.length" class="text-xs text-muted-foreground mt-0.5">{{ tool.versions.length }} versions</p>
             </div>
             <div class="flex gap-1 flex-shrink-0">
               <button @click="openToolForm(tool)" class="text-muted-foreground hover:text-foreground text-sm">{{ t('adminTools.edit') }}</button>
@@ -124,10 +157,12 @@ const editingCategory = ref<any>(null)
 const editingTool = ref<any>(null)
 
 const emptyCatForm = () => ({ name: '', icon: '', sort_order: 0 })
-const emptyToolForm = () => ({ name: '', category_id: 0, url: '', icon: '', description: '', is_featured: false, sort_order: 0, tagsStr: '', platformsStr: '' })
+const emptyToolForm = () => ({ name: '', category_id: 0, url: '', icon: '', iconType: 'emoji', description: '', is_featured: false, sort_order: 0, tagsStr: '', platformsStr: '', versions: [] as { version: string; url: string }[] })
 
 const catForm = ref(emptyCatForm())
 const toolForm = ref(emptyToolForm())
+
+const isIconUrl = (icon: string) => icon && (icon.startsWith('http://') || icon.startsWith('https://'))
 
 const loadData = async () => {
   try {
@@ -175,13 +210,20 @@ const deleteCategory = async (cat: any) => {
   }
 }
 
+const addVersion = () => {
+  toolForm.value.versions.push({ version: '', url: '' })
+}
+
 const openToolForm = (tool?: any) => {
   editingTool.value = tool || null
   if (tool) {
+    const iconIsUrl = isIconUrl(tool.icon)
     toolForm.value = {
       name: tool.name, category_id: tool.category_id, url: tool.url, icon: tool.icon,
+      iconType: iconIsUrl ? 'url' : 'emoji',
       description: tool.description, is_featured: tool.is_featured, sort_order: tool.sort_order || 0,
       tagsStr: (tool.tags || []).join(','), platformsStr: (tool.platforms || []).join(','),
+      versions: (tool.versions || []).map((v: any) => ({ version: v.version || '', url: v.url || '' })),
     }
   } else {
     toolForm.value = emptyToolForm()
@@ -199,6 +241,7 @@ const saveTool = async () => {
     is_featured: toolForm.value.is_featured, sort_order: toolForm.value.sort_order,
     tags: toolForm.value.tagsStr ? toolForm.value.tagsStr.split(',').map((s: string) => s.trim()).filter(Boolean) : [],
     platforms: toolForm.value.platformsStr ? toolForm.value.platformsStr.split(',').map((s: string) => s.trim()).filter(Boolean) : [],
+    versions: toolForm.value.versions.filter((v: any) => v.version.trim()).map((v: any) => ({ version: v.version.trim(), url: v.url.trim() })),
   }
   try {
     if (editingTool.value) {

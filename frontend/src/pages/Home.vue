@@ -33,9 +33,9 @@
       </div>
     </header>
 
-    <!-- Body: centered container wrapping sidebar + content -->
+    <!-- Body: centered container wrapping sidebar + content + drawer -->
     <div class="flex-1 flex justify-center overflow-hidden">
-      <div class="w-full max-w-[1400px] flex overflow-hidden">
+      <div class="w-full max-w-[1400px] flex overflow-hidden relative">
 
         <!-- Left Category Panel -->
         <aside class="flex-shrink-0 w-44 border-r border-border overflow-y-auto py-3 px-2">
@@ -60,17 +60,66 @@
           </div>
           <!-- Card Grid -->
           <div v-if="filteredTools.length" class="grid grid-cols-7 gap-3">
-            <a v-for="tool in filteredTools" :key="tool.id" :href="tool.url" target="_blank"
-               class="group aspect-square bg-card rounded-xl border border-border p-3 flex flex-col items-center justify-center gap-2 hover:bg-muted/60 hover:border-primary/30 transition-all cursor-pointer no-underline text-foreground">
-              <div class="w-11 h-11 rounded-lg bg-muted flex items-center justify-center text-xl flex-shrink-0 group-hover:scale-110 transition-transform">
-                {{ tool.icon || '🔗' }}
-              </div>
-              <span class="text-xs font-medium text-center leading-tight line-clamp-2 w-full">{{ tool.name }}</span>
-            </a>
+            <div v-for="tool in filteredTools" :key="tool.id"
+                 class="group aspect-square bg-card rounded-xl border border-border p-3 flex flex-col items-center justify-center gap-2 hover:bg-muted/60 hover:border-primary/30 transition-all cursor-pointer relative">
+              <!-- Info icon top-right -->
+              <button @click.stop="openDrawer(tool)" class="absolute top-2 right-2 w-5 h-5 rounded-full bg-muted text-muted-foreground flex items-center justify-center text-[10px] hover:bg-primary hover:text-primary-foreground transition-colors z-10" title="Detail">
+                i
+              </button>
+              <!-- Card body: click goes to main URL -->
+              <a :href="tool.url" target="_blank" @click.stop class="flex flex-col items-center justify-center gap-2 w-full h-full no-underline text-foreground">
+                <div class="w-11 h-11 rounded-lg bg-muted flex items-center justify-center text-xl flex-shrink-0 group-hover:scale-110 transition-transform overflow-hidden">
+                  <img v-if="isIconUrl(tool.icon)" :src="tool.icon" class="w-full h-full object-cover rounded-lg" alt="" />
+                  <span v-else>{{ tool.icon || '🔗' }}</span>
+                </div>
+                <span class="text-xs font-medium text-center leading-tight line-clamp-2 w-full">{{ tool.name }}</span>
+              </a>
+            </div>
           </div>
           <p v-else-if="!loading" class="text-center text-muted-foreground py-20 text-sm">{{ t('home.empty') }}</p>
           <p v-else class="text-center text-muted-foreground py-20 text-sm">Loading...</p>
         </main>
+
+        <!-- Right Drawer -->
+        <transition name="drawer">
+          <div v-if="drawerTool" class="absolute top-0 right-0 bottom-0 w-80 bg-card border-l border-border overflow-y-auto z-40 shadow-lg">
+            <div class="p-5">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-bold">{{ drawerTool.name }}</h3>
+                <button @click="drawerTool = null" class="w-6 h-6 rounded-full bg-muted flex items-center justify-center text-xs hover:bg-primary hover:text-primary-foreground transition-colors">✕</button>
+              </div>
+              <!-- Icon -->
+              <div class="w-16 h-16 rounded-xl bg-muted flex items-center justify-center text-3xl mb-4 overflow-hidden">
+                <img v-if="isIconUrl(drawerTool.icon)" :src="drawerTool.icon" class="w-full h-full object-cover rounded-xl" alt="" />
+                <span v-else>{{ drawerTool.icon || '🔗' }}</span>
+              </div>
+              <!-- Description -->
+              <p v-if="drawerTool.description" class="text-sm text-muted-foreground mb-4">{{ drawerTool.description }}</p>
+              <!-- Main URL -->
+              <div v-if="drawerTool.url" class="mb-4">
+                <a :href="drawerTool.url" target="_blank" class="text-sm text-primary hover:underline break-all">{{ drawerTool.url }}</a>
+              </div>
+              <!-- Tags & Platforms -->
+              <div v-if="drawerTool.tags?.length" class="flex flex-wrap gap-1 mb-3">
+                <span v-for="tag in drawerTool.tags" :key="tag" class="px-2 py-0.5 text-xs rounded bg-muted text-muted-foreground">{{ tag }}</span>
+              </div>
+              <div v-if="drawerTool.platforms?.length" class="flex flex-wrap gap-1 mb-4">
+                <span v-for="p in drawerTool.platforms" :key="p" class="px-2 py-0.5 text-xs rounded bg-muted text-muted-foreground">{{ p }}</span>
+              </div>
+              <!-- Versions -->
+              <div v-if="drawerTool.versions?.length">
+                <h4 class="text-sm font-semibold mb-2">{{ t('home.versions') }}</h4>
+                <div class="space-y-1">
+                  <div v-for="(v, idx) in drawerTool.versions" :key="idx" class="flex items-center gap-2 text-sm">
+                    <span class="text-muted-foreground w-6 text-right flex-shrink-0">{{ idx + 1 }}.</span>
+                    <a v-if="v.url" :href="v.url" target="_blank" class="text-primary hover:underline">{{ v.version }}</a>
+                    <span v-else>{{ v.version }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </transition>
 
       </div>
     </div>
@@ -87,7 +136,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, watch, nextTick } from 'vue'
+import { ref, computed, onMounted, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { tools as toolsApi, settings } from '@/api'
 
@@ -102,11 +151,18 @@ const allTools = ref<any[]>([])
 const searchQuery = ref('')
 const selectedCategoryId = ref(0)
 const loading = ref(false)
+const drawerTool = ref<any>(null)
+
+const isIconUrl = (icon: string) => icon && (icon.startsWith('http://') || icon.startsWith('https://'))
 
 const toggleDark = () => {
   isDark.value = !isDark.value
   localStorage.setItem('dark', String(isDark.value))
   document.documentElement.classList.toggle('dark')
+}
+
+const openDrawer = (tool: any) => {
+  drawerTool.value = tool
 }
 
 const handleVerify = async () => {
@@ -163,3 +219,14 @@ onMounted(() => {
   }
 })
 </script>
+
+<style scoped>
+.drawer-enter-active,
+.drawer-leave-active {
+  transition: transform 0.2s ease;
+}
+.drawer-enter-from,
+.drawer-leave-to {
+  transform: translateX(100%);
+}
+</style>

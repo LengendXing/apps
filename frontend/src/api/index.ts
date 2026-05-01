@@ -40,16 +40,6 @@ export const tools = {
   delete: (id: number) => request.delete(`/tools/${id}`),
 }
 
-export const uploads = {
-  upload: (file: File) => {
-    const fd = new FormData()
-    fd.append('file', file)
-    return request.post('/uploads', fd, { headers: { 'Content-Type': 'multipart/form-data' } })
-  },
-  list: (params?: { page?: number; page_size?: number }) => request.get('/uploads', { params }),
-  delete: (id: number) => request.delete(`/uploads/${id}`),
-}
-
 export const users = {
   list: (params?: { page?: number; page_size?: number }) => request.get('/users', { params }),
   update: (id: number, d: any) => request.put(`/users/${id}`, d),

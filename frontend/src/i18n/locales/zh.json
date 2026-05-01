@@ -1,20 +1,18 @@
 {
-  "nav": { "dashboard": "首页", "tools": "工具集", "upload": "上传", "users": "用户", "audit": "日志", "logout": "退出" },
+  "nav": { "dashboard": "首页", "tools": "工具集", "users": "用户", "audit": "日志", "logout": "退出" },
   "login": { "title": "登录", "username": "用户名", "password": "密码", "submit": "登录" },
   "dashboard": {
     "title": "欢迎回来",
     "tools": "工具集", "toolsDesc": "管理您的开发工具和资源",
-    "quickUpload": "快速上传", "uploadDesc": "上传和分享临时文件",
     "settings": "系统设置", "settingsDesc": "修改C端访问密码等配置",
     "accessPassword": "C端访问密码", "accessPasswordPlaceholder": "输入新密码",
     "update": "更新", "passwordUpdated": "密码已更新", "updateFailed": "更新失败",
     "users": "用户管理", "usersDesc": "管理系统用户和权限",
     "audit": "审计日志", "auditDesc": "查看系统操作记录",
-    "statUsers": "用户", "statCategories": "分类", "statTools": "工具", "statFiles": "文件"
+    "statUsers": "用户", "statCategories": "分类", "statTools": "工具"
   },
   "tools": { "title": "工具集", "search": "搜索工具...", "all": "全部", "featured": "精选" },
-  "upload": { "title": "文件上传", "drop": "拖拽文件到这里", "browse": "选择文件", "list": "已上传文件", "size": "大小", "expires": "过期时间", "delete": "删除", "uploading": "上传中...", "file": "文件", "action": "操作", "failed": "上传失败" },
-  "home": { "welcome": "欢迎使用 Apps", "hint": "请输入访问密码以继续", "password": "访问密码", "submit": "进入", "wrongPassword": "密码错误，请重试", "tools": "常用工具", "search": "搜索工具...", "empty": "暂无工具，请联系管理员添加", "all": "全部" },
+  "home": { "welcome": "欢迎使用 Apps", "hint": "请输入访问密码以继续", "password": "访问密码", "submit": "进入", "wrongPassword": "密码错误，请重试", "tools": "常用工具", "search": "搜索工具...", "empty": "暂无工具，请联系管理员添加", "all": "全部", "versions": "版本列表" },
   "adminTools": {
     "title": "工具管理",
     "addCategory": "新增分类", "addTool": "新增工具",
@@ -25,7 +23,12 @@
     "empty": "暂无工具，请先添加分类和工具", "icon": "图标",
     "edit": "编辑", "editCategory": "编辑分类", "editTool": "编辑工具",
     "sortOrder": "排序", "tags": "标签", "platforms": "平台",
-    "confirmDelete": "确认删除？"
+    "confirmDelete": "确认删除？",
+    "iconType": "图标类型", "iconEmoji": "Emoji", "iconUrl": "图片链接",
+    "iconUrlPlaceholder": "输入图标图片URL",
+    "versions": "版本列表", "addVersion": "添加版本",
+    "versionNumber": "版本号", "versionUrl": "版本链接",
+    "removeVersion": "移除"
   },
   "adminUsers": {
     "title": "用户管理",

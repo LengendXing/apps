@@ -15,5 +15,6 @@ class Tool(Base, TimestampMixin):
     category_id: Mapped[int] = mapped_column(Integer, ForeignKey("ap_categories.id"), index=True, default=0)
     tags: Mapped[str] = mapped_column(Text, default="[]")
     platforms: Mapped[str] = mapped_column(Text, default="[]")
+    versions: Mapped[str] = mapped_column(Text, default="[]")
     sort_order: Mapped[int] = mapped_column(Integer, default=0)
     is_featured: Mapped[int] = mapped_column(Integer, default=0)

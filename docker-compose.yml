@@ -7,7 +7,6 @@ services:
       - .env
     volumes:
       - ./data:/app/data
-      - ./uploads:/app/uploads
     restart: unless-stopped
 
   frontend:

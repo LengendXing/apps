@@ -12,7 +12,6 @@ const routes = [
   { path: '/admin/login', name: 'Login', component: () => import('./pages/Login.vue') },
   { path: '/admin', name: 'Dashboard', component: () => import('./pages/Dashboard.vue'), meta: { requiresAuth: true } },
   { path: '/admin/tools', name: 'AdminTools', component: () => import('./pages/AdminTools.vue'), meta: { requiresAuth: true } },
-  { path: '/admin/uploads', name: 'AdminUploads', component: () => import('./pages/AdminUploads.vue'), meta: { requiresAuth: true } },
   { path: '/admin/users', name: 'AdminUsers', component: () => import('./pages/AdminUsers.vue'), meta: { requiresAuth: true } },
   { path: '/admin/audit', name: 'AdminAudit', component: () => import('./pages/AdminAudit.vue'), meta: { requiresAuth: true } },
 ]

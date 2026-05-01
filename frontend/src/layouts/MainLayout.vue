@@ -6,7 +6,6 @@
         <nav class="flex items-center gap-1">
           <router-link to="/admin" class="px-3 py-1.5 text-sm rounded-md hover:bg-muted transition-colors">{{ t('nav.dashboard') }}</router-link>
           <router-link to="/admin/tools" class="px-3 py-1.5 text-sm rounded-md hover:bg-muted transition-colors">{{ t('nav.tools') }}</router-link>
-          <router-link to="/admin/uploads" class="px-3 py-1.5 text-sm rounded-md hover:bg-muted transition-colors">{{ t('nav.upload') }}</router-link>
           <router-link to="/admin/users" class="px-3 py-1.5 text-sm rounded-md hover:bg-muted transition-colors">{{ t('nav.users') }}</router-link>
           <router-link to="/admin/audit" class="px-3 py-1.5 text-sm rounded-md hover:bg-muted transition-colors">{{ t('nav.audit') }}</router-link>
         </nav>

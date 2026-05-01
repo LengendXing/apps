@@ -13,9 +13,6 @@ class Settings(BaseSettings):
     HOST: str = "0.0.0.0"
     PORT: int = 8000
 
-    UPLOAD_DIR: str = "./uploads"
-    MAX_FILE_SIZE_MB: int = 50
-    FILE_EXPIRE_HOURS: int = 24
     ENABLE_BACKUP: bool = False
     BACKUP_INTERVAL_HOURS: int = 24
 

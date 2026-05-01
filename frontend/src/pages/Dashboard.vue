@@ -3,7 +3,7 @@
     <div>
       <h2 class="text-2xl font-bold mb-8">{{ t('dashboard.title') }}</h2>
 
-      <div v-if="statData" class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+      <div v-if="statData" class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
         <div class="bg-card rounded-xl border border-border p-5">
           <p class="text-sm text-muted-foreground">{{ t('dashboard.statUsers') }}</p>
           <p class="text-2xl font-bold mt-1">{{ statData.users }}</p>
@@ -18,20 +18,12 @@
           <p class="text-2xl font-bold mt-1">{{ statData.tools }}</p>
           <p class="text-xs text-muted-foreground mt-1">{{ statData.featured_tools }} {{ t('tools.featured') }}</p>
         </div>
-        <div class="bg-card rounded-xl border border-border p-5">
-          <p class="text-sm text-muted-foreground">{{ t('dashboard.statFiles') }}</p>
-          <p class="text-2xl font-bold mt-1">{{ statData.files }}</p>
-        </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
         <router-link to="/admin/tools" class="group bg-card rounded-xl border border-border p-6 hover:bg-muted/50 transition-all cursor-pointer">
           <h3 class="text-lg font-semibold">{{ t('dashboard.tools') }}</h3>
           <p class="text-sm text-muted-foreground mt-1">{{ t('dashboard.toolsDesc') }}</p>
-        </router-link>
-        <router-link to="/admin/uploads" class="group bg-card rounded-xl border border-border p-6 hover:bg-muted/50 transition-all cursor-pointer">
-          <h3 class="text-lg font-semibold">{{ t('dashboard.quickUpload') }}</h3>
-          <p class="text-sm text-muted-foreground mt-1">{{ t('dashboard.uploadDesc') }}</p>
         </router-link>
         <div class="bg-card rounded-xl border border-border p-6 hover:bg-muted/50 transition-all">
           <h3 class="text-lg font-semibold">{{ t('dashboard.settings') }}</h3>
