@@ -42,3 +42,4 @@ logs/
 coverage/
 .html/
 .coverage
+deploy/.wrangler/

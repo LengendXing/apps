@@ -14,6 +14,34 @@
 
 ---
 
+## v0.1.0 — 内容填充与 Cloudflare 部署（2026-05-20）
+
+### 做什么
+- 按 10 个编程语言分类填充工具/软件数据（Go/Rust/Java/Flutter/Vue/React/Python/PHP/C++/C#）
+- 每个分类 10 个工具条目，共 100 个，含直链和版本信息
+- 编写 seed_data.py 种子脚本，数据入库 SQLite
+- 导出静态 data.json 供前端 fallback 读取
+- 修改 Home.vue 支持 API 不可用时自动切换静态数据模式
+- 部署到 Cloudflare Workers（apps-startpage.dabendi66.workers.dev）
+
+### 为什么
+- 需要为起始页填充实际的开发工具数据，覆盖主流编程语言生态
+- Cloudflare Workers 部署实现零成本、全球 CDN 分发
+
+### 怎么做
+- 创建 feat/content-fill 分支开发
+- 编写 seed_data.py（100 tools + 10 categories）直接写入 SQLite
+- 导出 data.json 到 frontend/public/
+- 修改 Home.vue 增加 isStaticMode + loadToolsFromStatic fallback
+- 使用 wrangler + Workers Assets 部署静态站点
+
+### 影响范围
+- 新增：backend/seed_data.py、frontend/public/data.json、deploy/ 目录
+- 修改：frontend/src/pages/Home.vue（静态数据 fallback）
+- 部署：Cloudflare Workers (apps-startpage.dabendi66.workers.dev)
+
+---
+
 ## v0.0.0 — 项目初始化（2026-04-28）
 
 ### 做什么

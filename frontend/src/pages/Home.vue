@@ -1,5 +1,5 @@
 <template>
-  <!-- Password Gate -->
+  <!-- Password Gate (only when backend API is available) -->
   <div v-if="showPasswordGate" class="h-screen bg-background flex items-center justify-center">
     <div class="w-full max-w-md mx-auto p-8">
       <div class="bg-card rounded-2xl border border-border p-10 shadow-sm">
@@ -152,6 +152,7 @@ const searchQuery = ref('')
 const selectedCategoryId = ref(0)
 const loading = ref(false)
 const drawerTool = ref<any>(null)
+const isStaticMode = ref(false)
 
 const isIconUrl = (icon: string) => icon && (icon.startsWith('http://') || icon.startsWith('https://'))
 
@@ -183,6 +184,20 @@ const handleVerify = async () => {
   }
 }
 
+const loadToolsFromStatic = async () => {
+  loading.value = true
+  try {
+    const res = await fetch('/data.json')
+    const data = await res.json()
+    categories.value = data.categories || []
+    allTools.value = data.tools || []
+  } catch (e) {
+    console.error('Failed to load static data:', e)
+  } finally {
+    loading.value = false
+  }
+}
+
 const loadTools = async () => {
   loading.value = true
   try {
@@ -193,9 +208,11 @@ const loadTools = async () => {
     categories.value = catsRes.data || []
     allTools.value = toolsRes.data?.items || []
   } catch (e) {
-    console.error('Failed to load tools:', e)
+    // Backend unavailable, fall back to static data
+    isStaticMode.value = true
+    await loadToolsFromStatic()
   } finally {
-    loading.value = false
+    if (!isStaticMode.value) loading.value = false
   }
 }
 
@@ -213,9 +230,20 @@ const filteredTools = computed(() => {
 
 onMounted(() => {
   if (isDark.value) document.documentElement.classList.add('dark')
-  if (sessionStorage.getItem('access_verified') === 'true') {
+  if (isStaticMode.value || sessionStorage.getItem('access_verified') === 'true') {
     showPasswordGate.value = false
-    loadTools()
+    if (isStaticMode.value) {
+      loadToolsFromStatic()
+    } else {
+      loadTools()
+    }
+  } else {
+    // Try API first, if unreachable skip password gate and use static data
+    loadTools().then(() => {
+      if (isStaticMode.value) {
+        showPasswordGate.value = false
+      }
+    })
   }
 })
 </script>

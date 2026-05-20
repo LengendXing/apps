@@ -1,6 +1,6 @@
 # PLAN.md — 开发计划
 
-**当前版本**: `v0.0.0` → 目标 `v0.1.0`（MVP）
+**当前版本**: `v0.1.0` → 目标 `v0.1.0`（MVP）
 **当前分支**: `dev`
 **业务前缀**: `ap_`
 
@@ -11,6 +11,8 @@
 - [x] 技术方案设计
 - [x] MAINTAIN.md 创建
 - [x] PLAN.md 创建
+- [x] v0.1.0 内容填充：10 语言分类 + 100 工具条目 + 直链
+- [x] Cloudflare Workers 部署（apps-startpage.dabendi66.workers.dev）
 
 ## 待完成 — Phase 1：项目骨架
 

@@ -1,0 +1,2899 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Go",
+      "icon": "go",
+      "sort_order": 1,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 2,
+      "name": "Rust",
+      "icon": "rust",
+      "sort_order": 2,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 3,
+      "name": "Java",
+      "icon": "java",
+      "sort_order": 3,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 4,
+      "name": "Flutter",
+      "icon": "flutter",
+      "sort_order": 4,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 5,
+      "name": "Vue",
+      "icon": "vue",
+      "sort_order": 5,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 6,
+      "name": "React",
+      "icon": "react",
+      "sort_order": 6,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 7,
+      "name": "Python",
+      "icon": "python",
+      "sort_order": 7,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 8,
+      "name": "PHP",
+      "icon": "php",
+      "sort_order": 8,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 9,
+      "name": "C++",
+      "icon": "cpp",
+      "sort_order": 9,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 10,
+      "name": "C#",
+      "icon": "csharp",
+      "sort_order": 10,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    }
+  ],
+  "tools": [
+    {
+      "id": 1,
+      "name": "Go",
+      "description": "Go programming language compiler and runtime. Statically typed, compiled language designed for simplicity and concurrency.",
+      "url": "https://go.dev/dl/",
+      "icon": "go",
+      "category_id": 1,
+      "tags": [
+        "compiler",
+        "runtime",
+        "language"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "1.24.3",
+          "url": "https://go.dev/dl/go1.24.3.linux-amd64.tar.gz"
+        },
+        {
+          "version": "1.23.9",
+          "url": "https://go.dev/dl/go1.23.9.linux-amd64.tar.gz"
+        }
+      ],
+      "sort_order": 1,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 11,
+      "name": "Rust",
+      "description": "Rust programming language. Empowering everyone to build reliable and efficient software with memory safety.",
+      "url": "https://www.rust-lang.org/tools/install",
+      "icon": "rust",
+      "category_id": 2,
+      "tags": [
+        "compiler",
+        "language",
+        "memory-safe"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "1.87.0",
+          "url": "https://static.rust-lang.org/dist/rust-1.87.0-x86_64-unknown-linux-gnu.tar.xz"
+        }
+      ],
+      "sort_order": 1,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 21,
+      "name": "JDK",
+      "description": "Java Development Kit. Official Oracle JDK with compiler, runtime, and development tools for Java SE.",
+      "url": "https://www.oracle.com/java/technologies/downloads/",
+      "icon": "java",
+      "category_id": 3,
+      "tags": [
+        "jdk",
+        "compiler",
+        "runtime"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "24.0.1",
+          "url": "https://download.oracle.com/java/24/latest/jdk-24_linux-x64_bin.tar.gz"
+        },
+        {
+          "version": "21.0.7 LTS",
+          "url": "https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.tar.gz"
+        }
+      ],
+      "sort_order": 1,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 31,
+      "name": "Flutter SDK",
+      "description": "Google UI toolkit for building natively compiled apps for mobile, web, and desktop from a single codebase.",
+      "url": "https://docs.flutter.dev/get-started/install",
+      "icon": "flutter",
+      "category_id": 4,
+      "tags": [
+        "sdk",
+        "mobile",
+        "cross-platform"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "3.32.0",
+          "url": "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.32.0-stable.tar.xz"
+        }
+      ],
+      "sort_order": 1,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 41,
+      "name": "Vue.js",
+      "description": "The Progressive JavaScript Framework. Approachable, performant, and versatile for building web UIs.",
+      "url": "https://github.com/vuejs/core/releases",
+      "icon": "vue",
+      "category_id": 5,
+      "tags": [
+        "framework",
+        "progressive",
+        "javascript"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "3.5.16",
+          "url": "https://github.com/vuejs/core/releases/tag/v3.5.16"
+        }
+      ],
+      "sort_order": 1,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 51,
+      "name": "React",
+      "description": "Library for web and native user interfaces. Component-based with declarative rendering and virtual DOM.",
+      "url": "https://github.com/facebook/react/releases",
+      "icon": "react",
+      "category_id": 6,
+      "tags": [
+        "library",
+        "ui",
+        "components"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "19.1.0",
+          "url": "https://github.com/facebook/react/releases/tag/v19.1.0"
+        }
+      ],
+      "sort_order": 1,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 61,
+      "name": "Python",
+      "description": "General-purpose, high-level programming language. Emphasizes readability with dynamic typing.",
+      "url": "https://www.python.org/downloads/",
+      "icon": "python",
+      "category_id": 7,
+      "tags": [
+        "language",
+        "interpreter",
+        "runtime"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "3.13.3",
+          "url": "https://www.python.org/ftp/python/3.13.3/Python-3.13.3.tgz"
+        },
+        {
+          "version": "3.12.11",
+          "url": "https://www.python.org/ftp/python/3.12.11/Python-3.12.11.tgz"
+        }
+      ],
+      "sort_order": 1,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 71,
+      "name": "PHP",
+      "description": "Server-side scripting language for web development. Powers 77% of websites with known server-side languages.",
+      "url": "https://www.php.net/downloads",
+      "icon": "php",
+      "category_id": 8,
+      "tags": [
+        "language",
+        "interpreter",
+        "web"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "8.4.7",
+          "url": "https://www.php.net/distributions/php-8.4.7.tar.gz"
+        },
+        {
+          "version": "8.3.20",
+          "url": "https://www.php.net/distributions/php-8.3.20.tar.gz"
+        }
+      ],
+      "sort_order": 1,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 81,
+      "name": "GCC",
+      "description": "GNU Compiler Collection. Free, industry-standard C++ compiler supporting C++23 features.",
+      "url": "https://gcc.gnu.org/install/download.html",
+      "icon": "cpp",
+      "category_id": 9,
+      "tags": [
+        "compiler",
+        "gnu",
+        "free"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "15.1",
+          "url": "https://ftp.gnu.org/gnu/gcc/gcc-15.1/gcc-15.1.tar.xz"
+        }
+      ],
+      "sort_order": 1,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 91,
+      "name": ".NET SDK",
+      "description": "Microsoft .NET development kit. C# runtime, SDK, and ASP.NET for web, desktop, mobile, cloud.",
+      "url": "https://dotnet.microsoft.com/download",
+      "icon": "csharp",
+      "category_id": 10,
+      "tags": [
+        "sdk",
+        "runtime",
+        "framework"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "9.0.5",
+          "url": "https://dotnet.microsoft.com/download/dotnet/9.0"
+        },
+        {
+          "version": "8.0.17 LTS",
+          "url": "https://dotnet.microsoft.com/download/dotnet/8.0"
+        }
+      ],
+      "sort_order": 1,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 12,
+      "name": "Actix Web",
+      "description": "Powerful, pragmatic, extremely fast web framework for Rust. Built on the Actix actor system.",
+      "url": "https://github.com/actix/actix-web/releases",
+      "icon": "web",
+      "category_id": 2,
+      "tags": [
+        "web",
+        "framework",
+        "async"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "4.10.0",
+          "url": "https://github.com/actix/actix-web/releases/tag/web-v4.10.0"
+        }
+      ],
+      "sort_order": 2,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 22,
+      "name": "Spring Boot",
+      "description": "Create stand-alone, production-grade Spring applications with minimal configuration.",
+      "url": "https://github.com/spring-projects/spring-boot/releases",
+      "icon": "web",
+      "category_id": 3,
+      "tags": [
+        "web",
+        "framework",
+        "microservice"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "3.5.0",
+          "url": "https://github.com/spring-projects/spring-boot/releases/tag/v3.5.0"
+        }
+      ],
+      "sort_order": 2,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 42,
+      "name": "Nuxt",
+      "description": "The Intuitive Vue Framework. Full-stack web apps with SSR, auto-imports, and file-based routing.",
+      "url": "https://github.com/nuxt/nuxt/releases",
+      "icon": "web",
+      "category_id": 5,
+      "tags": [
+        "ssr",
+        "full-stack",
+        "framework"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "3.17.4",
+          "url": "https://github.com/nuxt/nuxt/releases/tag/v3.17.4"
+        }
+      ],
+      "sort_order": 2,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 52,
+      "name": "Next.js",
+      "description": "The React Framework for the Web. SSR, static generation, API routes, and edge runtime.",
+      "url": "https://github.com/vercel/next.js/releases",
+      "icon": "web",
+      "category_id": 6,
+      "tags": [
+        "ssr",
+        "full-stack",
+        "framework"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "15.3.2",
+          "url": "https://github.com/vercel/next.js/releases/tag/v15.3.2"
+        }
+      ],
+      "sort_order": 2,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 62,
+      "name": "FastAPI",
+      "description": "Modern, fast web framework for APIs with Python 3.12+. Auto OpenAPI docs from type hints.",
+      "url": "https://github.com/fastapi/fastapi/releases",
+      "icon": "web",
+      "category_id": 7,
+      "tags": [
+        "web",
+        "api",
+        "async"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "0.115.12",
+          "url": "https://github.com/fastapi/fastapi/releases/tag/0.115.12"
+        }
+      ],
+      "sort_order": 2,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 72,
+      "name": "Laravel",
+      "description": "Elegant PHP web framework with expressive syntax. MVC with ORM, queue, events, and artisan CLI.",
+      "url": "https://github.com/laravel/laravel/releases",
+      "icon": "web",
+      "category_id": 8,
+      "tags": [
+        "framework",
+        "mvc",
+        "orm"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "12.13.0",
+          "url": "https://github.com/laravel/laravel/releases/tag/v12.13.0"
+        }
+      ],
+      "sort_order": 2,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 82,
+      "name": "Clang/LLVM",
+      "description": "C/C++/ObjC compiler and toolchain. Modular, high-quality with great diagnostics.",
+      "url": "https://github.com/llvm/llvm-project/releases",
+      "icon": "cpp",
+      "category_id": 9,
+      "tags": [
+        "compiler",
+        "llvm",
+        "toolchain"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "20.1.6",
+          "url": "https://github.com/llvm/llvm-project/releases/tag/llvmorg-20.1.6"
+        }
+      ],
+      "sort_order": 2,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 92,
+      "name": "Visual Studio",
+      "description": "Microsoft IDE. Best-in-class C# debugger, IntelliSense, and Azure tooling.",
+      "url": "https://visualstudio.microsoft.com/downloads/",
+      "icon": "ide",
+      "category_id": 10,
+      "tags": [
+        "ide",
+        "microsoft",
+        "editor"
+      ],
+      "platforms": [
+        "windows",
+        "macos"
+      ],
+      "versions": [
+        {
+          "version": "2022 v17.14",
+          "url": "https://visualstudio.microsoft.com/downloads/"
+        }
+      ],
+      "sort_order": 2,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 13,
+      "name": "Axum",
+      "description": "Ergonomic and modular web framework built with Tokio, Tower, and Hyper. Official Tokio team project.",
+      "url": "https://github.com/tokio-rs/axum/releases",
+      "icon": "web",
+      "category_id": 2,
+      "tags": [
+        "web",
+        "framework",
+        "tokio"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "0.8.4",
+          "url": "https://github.com/tokio-rs/axum/releases/tag/axum-v0.8.4"
+        }
+      ],
+      "sort_order": 3,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 33,
+      "name": "Android Studio",
+      "description": "Official IDE for Android and Flutter development. Includes emulator, layout editor, and APK analyzer.",
+      "url": "https://developer.android.com/studio",
+      "icon": "ide",
+      "category_id": 4,
+      "tags": [
+        "ide",
+        "android",
+        "emulator"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "2025.1.1",
+          "url": "https://developer.android.com/studio"
+        }
+      ],
+      "sort_order": 3,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 63,
+      "name": "Django",
+      "description": "High-level Python web framework. Batteries-included with ORM, admin, auth, and security.",
+      "url": "https://github.com/django/django/releases",
+      "icon": "web",
+      "category_id": 7,
+      "tags": [
+        "web",
+        "framework",
+        "orm"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "5.2.3",
+          "url": "https://github.com/django/django/releases/tag/5.2.3"
+        }
+      ],
+      "sort_order": 3,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 93,
+      "name": "Rider",
+      "description": "Fast C# IDE by JetBrains. Cross-platform .NET development with Unity support.",
+      "url": "https://www.jetbrains.com/rider/download/",
+      "icon": "ide",
+      "category_id": 10,
+      "tags": [
+        "ide",
+        "jetbrains",
+        "cross-platform"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "2025.1.2",
+          "url": "https://www.jetbrains.com/rider/download/"
+        }
+      ],
+      "sort_order": 3,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 5,
+      "name": "Hugo",
+      "description": "Static site generator written in Go. The world's fastest framework for building websites.",
+      "url": "https://github.com/gohugoio/hugo/releases",
+      "icon": "web",
+      "category_id": 1,
+      "tags": [
+        "ssg",
+        "static-site",
+        "blog"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "0.147.4",
+          "url": "https://github.com/gohugoio/hugo/releases/tag/v0.147.4"
+        }
+      ],
+      "sort_order": 5,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 15,
+      "name": "Tauri",
+      "description": "Build smaller, faster, more secure desktop and mobile apps with a web frontend. Rust-powered Electron alternative.",
+      "url": "https://github.com/tauri-apps/tauri/releases",
+      "icon": "desktop",
+      "category_id": 2,
+      "tags": [
+        "desktop",
+        "mobile",
+        "electron-alternative"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "2.5.0",
+          "url": "https://github.com/tauri-apps/tauri/releases/tag/tauri-v2.5.0"
+        }
+      ],
+      "sort_order": 5,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 26,
+      "name": "IntelliJ IDEA",
+      "description": "Capable and ergonomic Java IDE by JetBrains. Industry-standard for Java/Kotlin development.",
+      "url": "https://www.jetbrains.com/idea/download/",
+      "icon": "ide",
+      "category_id": 3,
+      "tags": [
+        "ide",
+        "jetbrains",
+        "editor"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "2025.1.2",
+          "url": "https://www.jetbrains.com/idea/download/"
+        }
+      ],
+      "sort_order": 6,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 46,
+      "name": "Vite",
+      "description": "Next-gen frontend build tool. Lightning-fast HMR, on-demand compilation, rich plugin ecosystem.",
+      "url": "https://github.com/vitejs/vite/releases",
+      "icon": "build",
+      "category_id": 5,
+      "tags": [
+        "build",
+        "hmr",
+        "bundler"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "6.3.5",
+          "url": "https://github.com/vitejs/vite/releases/tag/v6.3.5"
+        }
+      ],
+      "sort_order": 6,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 66,
+      "name": "PyCharm",
+      "description": "Python IDE by JetBrains. Intelligent code completion, analysis, and integrated tools.",
+      "url": "https://www.jetbrains.com/pycharm/download/",
+      "icon": "ide",
+      "category_id": 7,
+      "tags": [
+        "ide",
+        "jetbrains",
+        "editor"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "2025.1.2",
+          "url": "https://www.jetbrains.com/pycharm/download/"
+        }
+      ],
+      "sort_order": 6,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 87,
+      "name": "Qt",
+      "description": "Cross-platform GUI framework. Signals/slots, MVC, OpenGL, and Qt Creator IDE.",
+      "url": "https://download.qt.io/official_releases/qt/",
+      "icon": "ui",
+      "category_id": 9,
+      "tags": [
+        "gui",
+        "framework",
+        "cross-platform"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "6.9.0",
+          "url": "https://download.qt.io/official_releases/qt/6.9/6.9.0/"
+        }
+      ],
+      "sort_order": 7,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 88,
+      "name": "CLion",
+      "description": "C/C++ IDE by JetBrains. Smart editor, CMake support, debugger, and profiling.",
+      "url": "https://www.jetbrains.com/clion/download/",
+      "icon": "ide",
+      "category_id": 9,
+      "tags": [
+        "ide",
+        "jetbrains",
+        "editor"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "2025.1.2",
+          "url": "https://www.jetbrains.com/clion/download/"
+        }
+      ],
+      "sort_order": 8,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 79,
+      "name": "PhpStorm",
+      "description": "PHP IDE by JetBrains. Deep code understanding, refactoring, and built-in tools.",
+      "url": "https://www.jetbrains.com/phpstorm/download/",
+      "icon": "ide",
+      "category_id": 8,
+      "tags": [
+        "ide",
+        "jetbrains",
+        "editor"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "2025.1.2",
+          "url": "https://www.jetbrains.com/phpstorm/download/"
+        }
+      ],
+      "sort_order": 9,
+      "is_featured": true,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 2,
+      "name": "Gin",
+      "description": "HTTP web framework written in Go. Martini-like API with much better performance, up to 40x faster.",
+      "url": "https://github.com/gin-gonic/gin/releases",
+      "icon": "web",
+      "category_id": 1,
+      "tags": [
+        "web",
+        "framework",
+        "http"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "1.10.0",
+          "url": "https://github.com/gin-gonic/gin/releases/tag/v1.10.0"
+        }
+      ],
+      "sort_order": 2,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 32,
+      "name": "Dart SDK",
+      "description": "Dart programming language SDK. Client-optimized language for fast apps on any platform.",
+      "url": "https://github.com/dart-lang/sdk/releases",
+      "icon": "dart",
+      "category_id": 4,
+      "tags": [
+        "language",
+        "sdk",
+        "dart"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "3.8.0",
+          "url": "https://github.com/dart-lang/sdk/releases/tag/3.8.0"
+        }
+      ],
+      "sort_order": 2,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 3,
+      "name": "Echo",
+      "description": "High performance, minimalist Go web framework. Simple, scalable and fast.",
+      "url": "https://github.com/labstack/echo/releases",
+      "icon": "web",
+      "category_id": 1,
+      "tags": [
+        "web",
+        "framework",
+        "http"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "4.13.0",
+          "url": "https://github.com/labstack/echo/releases/tag/v4.13.0"
+        }
+      ],
+      "sort_order": 3,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 23,
+      "name": "Quarkus",
+      "description": "Supersonic Subatomic Java. Kubernetes-native framework with fast boot time and low memory footprint.",
+      "url": "https://github.com/quarkusio/quarkus/releases",
+      "icon": "web",
+      "category_id": 3,
+      "tags": [
+        "cloud-native",
+        "kubernetes",
+        "framework"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "3.22.2",
+          "url": "https://github.com/quarkusio/quarkus/releases/tag/3.22.2"
+        }
+      ],
+      "sort_order": 3,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 43,
+      "name": "Vuetify",
+      "description": "Material Design component framework for Vue. 800+ pre-made components with accessibility.",
+      "url": "https://github.com/vuetifyjs/vuetify/releases",
+      "icon": "ui",
+      "category_id": 5,
+      "tags": [
+        "material",
+        "components",
+        "ui"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "3.8.8",
+          "url": "https://github.com/vuetifyjs/vuetify/releases/tag/v3.8.8"
+        }
+      ],
+      "sort_order": 3,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 53,
+      "name": "Remix",
+      "description": "Full-stack web framework for React. Nested routing, progressive enhancement, server-first.",
+      "url": "https://github.com/remix-run/remix/releases",
+      "icon": "web",
+      "category_id": 6,
+      "tags": [
+        "full-stack",
+        "ssr",
+        "framework"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "2.16.2",
+          "url": "https://github.com/remix-run/remix/releases/tag/v2.16.2"
+        }
+      ],
+      "sort_order": 3,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 73,
+      "name": "Symfony",
+      "description": "Enterprise PHP framework and reusable components. Flexible, scalable foundation for PHP projects.",
+      "url": "https://github.com/symfony/symfony/releases",
+      "icon": "web",
+      "category_id": 8,
+      "tags": [
+        "framework",
+        "enterprise",
+        "components"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "7.3.0",
+          "url": "https://github.com/symfony/symfony/releases/tag/v7.3.0"
+        }
+      ],
+      "sort_order": 3,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 83,
+      "name": "CMake",
+      "description": "Cross-platform build system generator. Platform and compiler independence.",
+      "url": "https://github.com/Kitware/CMake/releases",
+      "icon": "build",
+      "category_id": 9,
+      "tags": [
+        "build",
+        "generator",
+        "cross-platform"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "4.0.3",
+          "url": "https://github.com/Kitware/CMake/releases/tag/v4.0.3"
+        }
+      ],
+      "sort_order": 3,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 4,
+      "name": "GORM",
+      "description": "The fantastic ORM library for Go. Full-featured with associations, hooks, migrations.",
+      "url": "https://github.com/go-gorm/gorm/releases",
+      "icon": "database",
+      "category_id": 1,
+      "tags": [
+        "orm",
+        "database",
+        "sql"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "1.25.12",
+          "url": "https://github.com/go-gorm/gorm/releases/tag/v1.25.12"
+        }
+      ],
+      "sort_order": 4,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 14,
+      "name": "Rocket",
+      "description": "Web framework for Rust with focus on usability, security, and extensibility. Declarative routing via macros.",
+      "url": "https://github.com/SergioBenitez/Rocket/releases",
+      "icon": "web",
+      "category_id": 2,
+      "tags": [
+        "web",
+        "framework",
+        "macros"
+      ],
+      "platforms": [
+        "linux",
+        "macos"
+      ],
+      "versions": [
+        {
+          "version": "0.5.1",
+          "url": "https://github.com/SergioBenitez/Rocket/releases/tag/v0.5.1"
+        }
+      ],
+      "sort_order": 4,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 24,
+      "name": "Gradle",
+      "description": "Build automation tool for multi-language projects. Standard for Android and Java builds.",
+      "url": "https://gradle.org/releases/",
+      "icon": "build",
+      "category_id": 3,
+      "tags": [
+        "build",
+        "automation",
+        "dependency"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "8.14",
+          "url": "https://services.gradle.org/distributions/gradle-8.14-bin.zip"
+        }
+      ],
+      "sort_order": 4,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 34,
+      "name": "Flutter DevTools",
+      "description": "Suite of debugging and performance tools. Widget inspector, timeline, memory, and network profiler.",
+      "url": "https://github.com/flutter/devtools/releases",
+      "icon": "debug",
+      "category_id": 4,
+      "tags": [
+        "debug",
+        "profiler",
+        "performance"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "0.8.0",
+          "url": "https://github.com/flutter/devtools/releases/tag/devtools-v0.8.0"
+        }
+      ],
+      "sort_order": 4,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 44,
+      "name": "Pinia",
+      "description": "Intuitive, type-safe state management for Vue. Officially recommended store with devtools support.",
+      "url": "https://github.com/vuejs/pinia/releases",
+      "icon": "state",
+      "category_id": 5,
+      "tags": [
+        "state-management",
+        "store",
+        "devtools"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "3.0.3",
+          "url": "https://github.com/vuejs/pinia/releases/tag/v3.0.3"
+        }
+      ],
+      "sort_order": 4,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 54,
+      "name": "TanStack Query",
+      "description": "Async state management for React. Server state sync, caching, background refetching, pagination.",
+      "url": "https://github.com/TanStack/query/releases",
+      "icon": "state",
+      "category_id": 6,
+      "tags": [
+        "state",
+        "server-state",
+        "caching"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "5.80.2",
+          "url": "https://github.com/TanStack/query/releases/tag/v5.80.2"
+        }
+      ],
+      "sort_order": 4,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 64,
+      "name": "Flask",
+      "description": "Lightweight WSGI web framework. Simple, extensible, with a rich ecosystem of extensions.",
+      "url": "https://github.com/pallets/flask/releases",
+      "icon": "web",
+      "category_id": 7,
+      "tags": [
+        "web",
+        "framework",
+        "lightweight"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "3.1.1",
+          "url": "https://github.com/pallets/flask/releases/tag/3.1.1"
+        }
+      ],
+      "sort_order": 4,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 74,
+      "name": "Composer",
+      "description": "Dependency manager for PHP. Declares, installs, and updates project libraries.",
+      "url": "https://github.com/composer/composer/releases",
+      "icon": "build",
+      "category_id": 8,
+      "tags": [
+        "dependency",
+        "package-manager"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "2.8.9",
+          "url": "https://github.com/composer/composer/releases/tag/2.8.9"
+        }
+      ],
+      "sort_order": 4,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 84,
+      "name": "Conan",
+      "description": "C/C++ package manager. Open-source, decentralized, integrates with CMake and Meson.",
+      "url": "https://github.com/conan-io/conan/releases",
+      "icon": "package",
+      "category_id": 9,
+      "tags": [
+        "package-manager",
+        "dependency",
+        "cmake"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "2.17.0",
+          "url": "https://github.com/conan-io/conan/releases/tag/2.17.0"
+        }
+      ],
+      "sort_order": 4,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 94,
+      "name": "ASP.NET Core",
+      "description": "Cross-platform, high-performance framework for modern web apps and APIs.",
+      "url": "https://github.com/dotnet/aspnetcore/releases",
+      "icon": "web",
+      "category_id": 10,
+      "tags": [
+        "web",
+        "framework",
+        "cross-platform"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "9.0.5",
+          "url": "https://github.com/dotnet/aspnetcore/releases/tag/v9.0.5"
+        }
+      ],
+      "sort_order": 4,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 25,
+      "name": "Maven",
+      "description": "Build automation and project management for Java. Convention-over-configuration with extensive plugin ecosystem.",
+      "url": "https://maven.apache.org/download.cgi",
+      "icon": "build",
+      "category_id": 3,
+      "tags": [
+        "build",
+        "automation",
+        "dependency"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "3.9.9",
+          "url": "https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz"
+        }
+      ],
+      "sort_order": 5,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 35,
+      "name": "Riverpod",
+      "description": "Reactive caching and state-management library for Flutter. Compile-time safe, testable, and flexible.",
+      "url": "https://github.com/rrousselGit/riverpod/releases",
+      "icon": "state",
+      "category_id": 4,
+      "tags": [
+        "state-management",
+        "reactive",
+        "caching"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "2.6.1",
+          "url": "https://github.com/rrousselGit/riverpod/releases/tag/2.6.1"
+        }
+      ],
+      "sort_order": 5,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 45,
+      "name": "Vue Router",
+      "description": "Official router for Vue.js. Dynamic routing, lazy loading, navigation guards, and scroll behavior.",
+      "url": "https://github.com/vuejs/router/releases",
+      "icon": "router",
+      "category_id": 5,
+      "tags": [
+        "router",
+        "routing",
+        "spa"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "4.5.1",
+          "url": "https://github.com/vuejs/router/releases/tag/v4.5.1"
+        }
+      ],
+      "sort_order": 5,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 55,
+      "name": "Material UI",
+      "description": "Material Design components for React. Comprehensive UI library with theming and accessibility.",
+      "url": "https://github.com/mui/material-ui/releases",
+      "icon": "ui",
+      "category_id": 6,
+      "tags": [
+        "material",
+        "components",
+        "ui"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "7.1.0",
+          "url": "https://github.com/mui/material-ui/releases/tag/v7.1.0"
+        }
+      ],
+      "sort_order": 5,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 65,
+      "name": "Poetry",
+      "description": "Python dependency management and packaging. Replaces pip, virtualenv, and setup.py.",
+      "url": "https://github.com/python-poetry/poetry/releases",
+      "icon": "build",
+      "category_id": 7,
+      "tags": [
+        "dependency",
+        "packaging",
+        "build"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "2.1.3",
+          "url": "https://github.com/python-poetry/poetry/releases/tag/2.1.3"
+        }
+      ],
+      "sort_order": 5,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 75,
+      "name": "PHPUnit",
+      "description": "Unit testing framework for PHP. De facto standard with assertions, mocks, and data providers.",
+      "url": "https://github.com/sebastianbergmann/phpunit/releases",
+      "icon": "test",
+      "category_id": 8,
+      "tags": [
+        "testing",
+        "unit-test",
+        "tdd"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "12.1.4",
+          "url": "https://github.com/sebastianbergmann/phpunit/releases/tag/12.1.4"
+        }
+      ],
+      "sort_order": 5,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 85,
+      "name": "vcpkg",
+      "description": "C++ package manager by Microsoft. 2500+ libraries with CMake integration.",
+      "url": "https://github.com/microsoft/vcpkg/releases",
+      "icon": "package",
+      "category_id": 9,
+      "tags": [
+        "package-manager",
+        "microsoft",
+        "cmake"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "2025.05.19",
+          "url": "https://github.com/microsoft/vcpkg/releases/tag/2025.05.19"
+        }
+      ],
+      "sort_order": 5,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 95,
+      "name": "Entity Framework",
+      "description": "Microsoft ORM for .NET. Code-first, database-first, migrations, LINQ queries.",
+      "url": "https://github.com/dotnet/efcore/releases",
+      "icon": "database",
+      "category_id": 10,
+      "tags": [
+        "orm",
+        "database",
+        "linq"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "9.0.5",
+          "url": "https://github.com/dotnet/efcore/releases/tag/v9.0.5"
+        }
+      ],
+      "sort_order": 5,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 6,
+      "name": "Cobra",
+      "description": "Library for creating powerful modern CLI applications with commands, args and flags.",
+      "url": "https://github.com/spf13/cobra/releases",
+      "icon": "terminal",
+      "category_id": 1,
+      "tags": [
+        "cli",
+        "command",
+        "args"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "1.9.1",
+          "url": "https://github.com/spf13/cobra/releases/tag/v1.9.1"
+        }
+      ],
+      "sort_order": 6,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 16,
+      "name": "Diesel",
+      "description": "Safe, extensible ORM and query builder for Rust. Compile-time checked SQL queries with type safety.",
+      "url": "https://github.com/diesel-rs/diesel/releases",
+      "icon": "database",
+      "category_id": 2,
+      "tags": [
+        "orm",
+        "database",
+        "sql"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "2.2.10",
+          "url": "https://github.com/diesel-rs/diesel/releases/tag/v2.2.10"
+        }
+      ],
+      "sort_order": 6,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 36,
+      "name": "Flutter Bloc",
+      "description": "Predictable state management for Flutter. BLoC pattern with separation of presentation and business logic.",
+      "url": "https://github.com/felangel/bloc/releases",
+      "icon": "state",
+      "category_id": 4,
+      "tags": [
+        "state-management",
+        "bloc",
+        "pattern"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "9.0.0",
+          "url": "https://github.com/felangel/bloc/releases/tag/bloc-v9.0.0"
+        }
+      ],
+      "sort_order": 6,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 56,
+      "name": "Ant Design",
+      "description": "Enterprise-class UI design language and React component library. 60+ components.",
+      "url": "https://github.com/ant-design/ant-design/releases",
+      "icon": "ui",
+      "category_id": 6,
+      "tags": [
+        "enterprise",
+        "components",
+        "ui"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "5.25.1",
+          "url": "https://github.com/ant-design/ant-design/releases/tag/5.25.1"
+        }
+      ],
+      "sort_order": 6,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 76,
+      "name": "PHPStan",
+      "description": "Static analysis tool for PHP. Discovers bugs without writing tests, focuses on type errors.",
+      "url": "https://github.com/phpstan/phpstan/releases",
+      "icon": "lint",
+      "category_id": 8,
+      "tags": [
+        "static-analysis",
+        "quality",
+        "types"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "2.1.14",
+          "url": "https://github.com/phpstan/phpstan/releases/tag/2.1.14"
+        }
+      ],
+      "sort_order": 6,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 86,
+      "name": "Boost",
+      "description": "Peer-reviewed portable C++ source libraries. 180+ libraries covering many domains.",
+      "url": "https://www.boost.org/users/download/",
+      "icon": "library",
+      "category_id": 9,
+      "tags": [
+        "library",
+        "portable",
+        "peer-reviewed"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "1.88.0",
+          "url": "https://boostorg.jfrog.io/artifactory/main/release/1.88.0/source/boost_1_88_0.tar.gz"
+        }
+      ],
+      "sort_order": 6,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 96,
+      "name": "Blazor",
+      "description": "Interactive web UIs with C# instead of JavaScript. WebAssembly or SignalR.",
+      "url": "https://github.com/dotnet/aspnetcore/releases",
+      "icon": "web",
+      "category_id": 10,
+      "tags": [
+        "webassembly",
+        "spa",
+        "csharp"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "9.0.5",
+          "url": "https://github.com/dotnet/aspnetcore/releases/tag/v9.0.5"
+        }
+      ],
+      "sort_order": 6,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 7,
+      "name": "Delve",
+      "description": "Go debugger. Full-featured debugging tool for Go with breakpoints, variable inspection, goroutine tracing.",
+      "url": "https://github.com/go-delve/delve/releases",
+      "icon": "debug",
+      "category_id": 1,
+      "tags": [
+        "debugger",
+        "development"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "1.24.0",
+          "url": "https://github.com/go-delve/delve/releases/tag/v1.24.0"
+        }
+      ],
+      "sort_order": 7,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 17,
+      "name": "Tokio",
+      "description": "Runtime for writing reliable, asynchronous, and slim applications with Rust.",
+      "url": "https://github.com/tokio-rs/tokio/releases",
+      "icon": "async",
+      "category_id": 2,
+      "tags": [
+        "async",
+        "runtime",
+        "concurrency"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "1.45.1",
+          "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-1.45.1"
+        }
+      ],
+      "sort_order": 7,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 27,
+      "name": "JUnit",
+      "description": "Unit testing framework for Java. De facto standard with assertions, test runners, and parameterized tests.",
+      "url": "https://github.com/junit-team/junit5/releases",
+      "icon": "test",
+      "category_id": 3,
+      "tags": [
+        "testing",
+        "unit-test",
+        "tdd"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "5.13.0",
+          "url": "https://github.com/junit-team/junit5/releases/tag/r5.13.0"
+        }
+      ],
+      "sort_order": 7,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 37,
+      "name": "Dio",
+      "description": "Powerful HTTP client for Dart/Flutter. Interceptors, global config, FormData, request cancellation.",
+      "url": "https://github.com/cfug/dio/releases",
+      "icon": "http",
+      "category_id": 4,
+      "tags": [
+        "http",
+        "network",
+        "rest"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "5.8.0",
+          "url": "https://github.com/cfug/dio/releases/tag/v5.8.0"
+        }
+      ],
+      "sort_order": 7,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 47,
+      "name": "VueUse",
+      "description": "Collection of essential Vue Composition Utilities. 200+ composable functions for Vue apps.",
+      "url": "https://github.com/vueuse/vueuse/releases",
+      "icon": "util",
+      "category_id": 5,
+      "tags": [
+        "composables",
+        "utilities",
+        "hooks"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "12.8.2",
+          "url": "https://github.com/vueuse/vueuse/releases/tag/v12.8.2"
+        }
+      ],
+      "sort_order": 7,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 57,
+      "name": "React Router",
+      "description": "Declarative routing for React. Nested routes, lazy loading, data loading.",
+      "url": "https://github.com/remix-run/react-router/releases",
+      "icon": "router",
+      "category_id": 6,
+      "tags": [
+        "router",
+        "routing",
+        "spa"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "7.6.1",
+          "url": "https://github.com/remix-run/react-router/releases/tag/v7.6.1"
+        }
+      ],
+      "sort_order": 7,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 67,
+      "name": "pytest",
+      "description": "Testing framework for Python. Simple, scalable, with fixtures, parametrize, and plugins.",
+      "url": "https://github.com/pytest-dev/pytest/releases",
+      "icon": "test",
+      "category_id": 7,
+      "tags": [
+        "testing",
+        "unit-test",
+        "tdd"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "8.4.0",
+          "url": "https://github.com/pytest-dev/pytest/releases/tag/8.4.0"
+        }
+      ],
+      "sort_order": 7,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 77,
+      "name": "Laravel Forge",
+      "description": "Server management and deployment for PHP/Laravel. Provision, deploy, manage SSL and queues.",
+      "url": "https://forge.laravel.com/",
+      "icon": "devops",
+      "category_id": 8,
+      "tags": [
+        "deployment",
+        "server",
+        "devops"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "cloud",
+          "url": "https://forge.laravel.com/"
+        }
+      ],
+      "sort_order": 7,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 97,
+      "name": "MAUI",
+      "description": ".NET Multi-platform App UI. Build native mobile and desktop apps from single C# codebase.",
+      "url": "https://github.com/dotnet/maui/releases",
+      "icon": "mobile",
+      "category_id": 10,
+      "tags": [
+        "mobile",
+        "desktop",
+        "cross-platform"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "9.0.50",
+          "url": "https://github.com/dotnet/maui/releases/tag/v9.0.50"
+        }
+      ],
+      "sort_order": 7,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 8,
+      "name": "golangci-lint",
+      "description": "Fast Go linters runner. Runs multiple linters in parallel, integrates with major editors and CI.",
+      "url": "https://github.com/golangci/golangci-lint/releases",
+      "icon": "lint",
+      "category_id": 1,
+      "tags": [
+        "linter",
+        "quality",
+        "ci"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "1.64.8",
+          "url": "https://github.com/golangci/golangci-lint/releases/tag/v1.64.8"
+        }
+      ],
+      "sort_order": 8,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 18,
+      "name": "Clippy",
+      "description": "Collection of lints to catch common mistakes and improve Rust code. Bundled with the Rust toolchain.",
+      "url": "https://github.com/rust-lang/rust-clippy/releases",
+      "icon": "lint",
+      "category_id": 2,
+      "tags": [
+        "linter",
+        "quality"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "0.1.87",
+          "url": "https://github.com/rust-lang/rust-clippy/releases/tag/rust-1.87.0"
+        }
+      ],
+      "sort_order": 8,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 28,
+      "name": "Hibernate",
+      "description": "Object-relational mapping framework for Java. Powerful ORM with HQL, caching, and lazy loading.",
+      "url": "https://hibernate.org/orm/releases/",
+      "icon": "database",
+      "category_id": 3,
+      "tags": [
+        "orm",
+        "database",
+        "jpa"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "7.0.0",
+          "url": "https://hibernate.org/orm/releases/7.0/"
+        }
+      ],
+      "sort_order": 8,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 38,
+      "name": "Freezed",
+      "description": "Code generation for immutable data classes in Dart. Union types, copyWith, JSON serialization.",
+      "url": "https://github.com/rrousselGit/freezed/releases",
+      "icon": "codegen",
+      "category_id": 4,
+      "tags": [
+        "codegen",
+        "immutable",
+        "data-class"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "3.0.0",
+          "url": "https://github.com/rrousselGit/freezed/releases/tag/v3.0.0"
+        }
+      ],
+      "sort_order": 8,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 48,
+      "name": "Element Plus",
+      "description": "Vue 3 UI library for enterprise. 60+ high-quality components with i18n support.",
+      "url": "https://github.com/element-plus/element-plus/releases",
+      "icon": "ui",
+      "category_id": 5,
+      "tags": [
+        "components",
+        "enterprise",
+        "ui"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "2.9.10",
+          "url": "https://github.com/element-plus/element-plus/releases/tag/2.9.10"
+        }
+      ],
+      "sort_order": 8,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 58,
+      "name": "Redux Toolkit",
+      "description": "Official toolset for efficient Redux development. Simplified store setup and async logic.",
+      "url": "https://github.com/reduxjs/redux-toolkit/releases",
+      "icon": "state",
+      "category_id": 6,
+      "tags": [
+        "state-management",
+        "store",
+        "flux"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "2.8.2",
+          "url": "https://github.com/reduxjs/redux-toolkit/releases/tag/v2.8.2"
+        }
+      ],
+      "sort_order": 8,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 68,
+      "name": "Ruff",
+      "description": "Extremely fast Python linter and formatter written in Rust. Replaces flake8, isort, and black.",
+      "url": "https://github.com/astral-sh/ruff/releases",
+      "icon": "lint",
+      "category_id": 7,
+      "tags": [
+        "linter",
+        "formatter",
+        "quality"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "0.11.12",
+          "url": "https://github.com/astral-sh/ruff/releases/tag/0.11.12"
+        }
+      ],
+      "sort_order": 8,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 78,
+      "name": "Xdebug",
+      "description": "PHP extension for debugging and profiling. Step-through debugging, stack traces, coverage.",
+      "url": "https://github.com/xdebug/xdebug/releases",
+      "icon": "debug",
+      "category_id": 8,
+      "tags": [
+        "debugger",
+        "profiler",
+        "extension"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "3.4.6",
+          "url": "https://github.com/xdebug/xdebug/releases/tag/3.4.6"
+        }
+      ],
+      "sort_order": 8,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 98,
+      "name": "NuGet",
+      "description": "Package manager for .NET. 400k+ packages with restore, versioning, MSBuild integration.",
+      "url": "https://www.nuget.org/downloads",
+      "icon": "package",
+      "category_id": 10,
+      "tags": [
+        "package-manager",
+        "dependency",
+        "dotnet"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "6.14.0",
+          "url": "https://dist.nuget.org/win-x86-commandline/v6.14.0/nuget.exe"
+        }
+      ],
+      "sort_order": 8,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 9,
+      "name": "Air",
+      "description": "Live reload for Go apps. Watch source code changes and rebuild/restart automatically.",
+      "url": "https://github.com/cosmtrek/air/releases",
+      "icon": "dev",
+      "category_id": 1,
+      "tags": [
+        "live-reload",
+        "development",
+        "hot-reload"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "1.52.3",
+          "url": "https://github.com/cosmtrek/air/releases/tag/v1.52.3"
+        }
+      ],
+      "sort_order": 9,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 19,
+      "name": "Rust Analyzer",
+      "description": "Rust LSP server. IDE features like code completion, goto definition, and inline hints.",
+      "url": "https://github.com/rust-lang/rust-analyzer/releases",
+      "icon": "ide",
+      "category_id": 2,
+      "tags": [
+        "lsp",
+        "ide",
+        "editor"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "2025-05-12",
+          "url": "https://github.com/rust-lang/rust-analyzer/releases/tag/2025-05-12"
+        }
+      ],
+      "sort_order": 9,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 29,
+      "name": "Micronaut",
+      "description": "Modern JVM framework for building modular, easily testable microservice and serverless applications.",
+      "url": "https://github.com/micronaut-projects/micronaut-core/releases",
+      "icon": "web",
+      "category_id": 3,
+      "tags": [
+        "microservice",
+        "cloud-native",
+        "framework"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "4.8.3",
+          "url": "https://github.com/micronaut-projects/micronaut-core/releases/tag/v4.8.3"
+        }
+      ],
+      "sort_order": 9,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 39,
+      "name": "Melos",
+      "description": "Manage multi-package Dart/Flutter projects. Workspace tool for monorepos with versioning and changelogs.",
+      "url": "https://github.com/invertase/melos/releases",
+      "icon": "tool",
+      "category_id": 4,
+      "tags": [
+        "monorepo",
+        "workspace",
+        "multi-package"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "6.2.0",
+          "url": "https://github.com/invertase/melos/releases/tag/melos-v6.2.0"
+        }
+      ],
+      "sort_order": 9,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 49,
+      "name": "Naive UI",
+      "description": "Vue 3 UI library with 80+ components. TypeScript-first, customizable, and fairly complete.",
+      "url": "https://github.com/tusen-ai/naive-ui/releases",
+      "icon": "ui",
+      "category_id": 5,
+      "tags": [
+        "components",
+        "typescript",
+        "ui"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "2.41.0",
+          "url": "https://github.com/tusen-ai/naive-ui/releases/tag/v2.41.0"
+        }
+      ],
+      "sort_order": 9,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 59,
+      "name": "React Hook Form",
+      "description": "Performant forms with easy validation for React. Minimizes re-renders with schema validation.",
+      "url": "https://github.com/react-hook-form/react-hook-form/releases",
+      "icon": "form",
+      "category_id": 6,
+      "tags": [
+        "form",
+        "validation",
+        "hooks"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "7.56.4",
+          "url": "https://github.com/react-hook-form/react-hook-form/releases/tag/v7.56.4"
+        }
+      ],
+      "sort_order": 9,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 69,
+      "name": "Jupyter",
+      "description": "Interactive computing notebook. Live code, equations, visualizations, and narrative text.",
+      "url": "https://github.com/jupyter/notebook/releases",
+      "icon": "notebook",
+      "category_id": 7,
+      "tags": [
+        "notebook",
+        "data-science",
+        "visualization"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "7.4.2",
+          "url": "https://github.com/jupyter/notebook/releases/tag/v7.4.2"
+        }
+      ],
+      "sort_order": 9,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 89,
+      "name": "Google Test",
+      "description": "C++ testing framework by Google. xUnit-style with assertions and death tests.",
+      "url": "https://github.com/google/googletest/releases",
+      "icon": "test",
+      "category_id": 9,
+      "tags": [
+        "testing",
+        "unit-test",
+        "xunit"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "1.17.0",
+          "url": "https://github.com/google/googletest/releases/tag/v1.17.0"
+        }
+      ],
+      "sort_order": 9,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 99,
+      "name": "Avalonia",
+      "description": "Cross-platform XAML UI framework for .NET. Native desktop for Win/Mac/Linux.",
+      "url": "https://github.com/AvaloniaUI/Avalonia/releases",
+      "icon": "ui",
+      "category_id": 10,
+      "tags": [
+        "desktop",
+        "xaml",
+        "cross-platform"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "11.3.4",
+          "url": "https://github.com/AvaloniaUI/Avalonia/releases/tag/11.3.4"
+        }
+      ],
+      "sort_order": 9,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 10,
+      "name": "Fiber",
+      "description": "Express-inspired Go web framework built on Fasthttp. Fastest Go HTTP framework with low memory footprint.",
+      "url": "https://github.com/gofiber/fiber/releases",
+      "icon": "web",
+      "category_id": 1,
+      "tags": [
+        "web",
+        "framework",
+        "fasthttp"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "2.52.6",
+          "url": "https://github.com/gofiber/fiber/releases/tag/v2.52.6"
+        }
+      ],
+      "sort_order": 10,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 20,
+      "name": "SeaORM",
+      "description": "Async ORM for Rust built on sqlx. Dynamic query builder with entity model support.",
+      "url": "https://github.com/SeaQL/sea-orm/releases",
+      "icon": "database",
+      "category_id": 2,
+      "tags": [
+        "orm",
+        "database",
+        "async"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "1.1.13",
+          "url": "https://github.com/SeaQL/sea-orm/releases/tag/1.1.13"
+        }
+      ],
+      "sort_order": 10,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 30,
+      "name": "Netty",
+      "description": "Async event-driven network framework for high-performance protocol servers and clients.",
+      "url": "https://github.com/netty/netty/releases",
+      "icon": "network",
+      "category_id": 3,
+      "tags": [
+        "network",
+        "async",
+        "nio"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "4.2.1",
+          "url": "https://github.com/netty/netty/releases/tag/netty-4.2.1.Final"
+        }
+      ],
+      "sort_order": 10,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 40,
+      "name": "Very Good CLI",
+      "description": "CLI tool for Dart/Flutter by VGV. Generates templates, runs tests, and manages releases.",
+      "url": "https://github.com/VeryGoodOpenSource/very_good_cli/releases",
+      "icon": "terminal",
+      "category_id": 4,
+      "tags": [
+        "cli",
+        "scaffolding",
+        "template"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "0.24.0",
+          "url": "https://github.com/VeryGoodOpenSource/very_good_cli/releases/tag/v0.24.0"
+        }
+      ],
+      "sort_order": 10,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 50,
+      "name": "Vue DevTools",
+      "description": "Browser devtools extension for debugging Vue.js. Inspect components, state, router, and events.",
+      "url": "https://github.com/vuejs/devtools/releases",
+      "icon": "debug",
+      "category_id": 5,
+      "tags": [
+        "devtools",
+        "debug",
+        "extension"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "7.1.0",
+          "url": "https://github.com/vuejs/devtools/releases/tag/v7.1.0"
+        }
+      ],
+      "sort_order": 10,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 60,
+      "name": "Zustand",
+      "description": "Small, fast, scalable state management for React. Simple API without boilerplate.",
+      "url": "https://github.com/pmndrs/zustand/releases",
+      "icon": "state",
+      "category_id": 6,
+      "tags": [
+        "state-management",
+        "minimal",
+        "hooks"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "5.0.5",
+          "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.5"
+        }
+      ],
+      "sort_order": 10,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 70,
+      "name": "Celery",
+      "description": "Distributed task queue for Python. Async job processing with broker and result backend.",
+      "url": "https://github.com/celery/celery/releases",
+      "icon": "queue",
+      "category_id": 7,
+      "tags": [
+        "task-queue",
+        "async",
+        "distributed"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "5.5.3",
+          "url": "https://github.com/celery/celery/releases/tag/v5.5.3"
+        }
+      ],
+      "sort_order": 10,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 80,
+      "name": "Pest",
+      "description": "Elegant testing framework for PHP. Jest-like API built on PHPUnit.",
+      "url": "https://github.com/pestphp/pest/releases",
+      "icon": "test",
+      "category_id": 8,
+      "tags": [
+        "testing",
+        "elegant",
+        "tdd"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "3.8.2",
+          "url": "https://github.com/pestphp/pest/releases/tag/v3.8.2"
+        }
+      ],
+      "sort_order": 10,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 90,
+      "name": "Valgrind",
+      "description": "Dynamic analysis framework. Detects memory leaks, threading errors, cache performance.",
+      "url": "https://sourceware.org/pub/valgrind/",
+      "icon": "debug",
+      "category_id": 9,
+      "tags": [
+        "memory",
+        "profiler",
+        "debugger"
+      ],
+      "platforms": [
+        "linux"
+      ],
+      "versions": [
+        {
+          "version": "3.25.0",
+          "url": "https://sourceware.org/pub/valgrind/valgrind-3.25.0.tar.bz2"
+        }
+      ],
+      "sort_order": 10,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    },
+    {
+      "id": 100,
+      "name": "NUnit",
+      "description": "Unit testing framework for .NET. Attribute-based with constraints and test runners.",
+      "url": "https://github.com/nunit/nunit/releases",
+      "icon": "test",
+      "category_id": 10,
+      "tags": [
+        "testing",
+        "unit-test",
+        "tdd"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "versions": [
+        {
+          "version": "4.3.2",
+          "url": "https://github.com/nunit/nunit/releases/tag/4.3.2"
+        }
+      ],
+      "sort_order": 10,
+      "is_featured": false,
+      "created_at": "2026-05-20 05:06:43",
+      "updated_at": "2026-05-20 05:06:43"
+    }
+  ]
+}
